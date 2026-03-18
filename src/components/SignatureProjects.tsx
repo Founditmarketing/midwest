@@ -7,21 +7,21 @@ const projects = [
     title: 'The Grand Resort',
     location: 'Aspen, Colorado',
     description: 'A 60-foot heritage installation serving as the centerpiece for a world-class mountain resort.',
-    image: '/images/grand_resort.png'
+    image: '/images/resort_farm_windmill.png'
   },
   {
     id: 2,
     title: 'The Vanderbilt Estate',
     location: 'Newport, Rhode Island',
     description: 'Bespoke aeration innovation seamlessly integrated into a historic 19th-century landscape.',
-    image: '/images/vanderbilt_estate.png'
+    image: '/images/estate_farm_windmill.png'
   },
   {
     id: 3,
     title: 'The Willow Wedding Venue',
     location: 'Napa Valley, California',
     description: 'A picturesque landmark providing the perfect backdrop for exclusive private events.',
-    image: '/images/willow_wedding.png'
+    image: '/images/wedding_farm_windmill.png'
   }
 ];
 
