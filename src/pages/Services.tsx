@@ -25,12 +25,12 @@ const services = [
     desc: 'Our master craftsmen have preserved thousands of vintage windmills across the country. We repair catastrophic storm damage, replace rusted motors with heavily-calibrated modern equivalents, and completely restore leaning towers to their absolute original glory.',
     image: '/images/realistic_barn_windmill.png'
   },
-  {
+    {
     num: '04',
     icon: <PackageSearch size={20} className="text-heritage-gold" strokeWidth={1.5} />,
     title: 'Replacement Parts Logistics',
     desc: 'Beyond full-scale installations, we act as the premier supplier for rare and standard Aermotor replacement parts. We ship high-grade American steel components directly to your site, bypassing cheap imports to guarantee decade-spanning durability.',
-    image: '/images/estate_farm_windmill.png'
+    image: '/images/windmill_parts_logistics.png'
   }
 ];
 
