@@ -70,7 +70,7 @@ export default function AerationInnovation() {
           >
             <div className="absolute inset-0 bg-black/20 z-10 mix-blend-multiply"></div>
             <img 
-              src="/images/aeration_farm_windmill.png" 
+              src="/images/realistic_aeration_windmill.png" 
               alt="Windmill by a pristine lake" 
               className="w-full h-full object-cover object-center"
               referrerPolicy="no-referrer"
