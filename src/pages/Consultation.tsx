@@ -44,31 +44,31 @@ export default function Consultation() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="bg-black/40 backdrop-blur-xl border border-white/10 p-8 md:p-12 shadow-2xl space-y-8"
+          className="bg-black/20 backdrop-blur-3xl border border-white/10 p-8 md:p-14 shadow-[0_0_80px_rgba(197,160,89,0.05)] space-y-10 relative"
           onSubmit={(e) => e.preventDefault()}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="space-y-2">
-              <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400">Primary Contact</label>
-              <input type="text" className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-heritage-gold/50 transition-colors font-sans text-sm backdrop-blur-sm" placeholder="Full Name" />
+            <div className="space-y-1">
+              <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-500">Primary Contact</label>
+              <input type="text" className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-heritage-gold transition-colors font-sans text-sm placeholder-gray-700" placeholder="Full Name" />
             </div>
-            <div className="space-y-2">
-              <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400">Email Address</label>
-              <input type="email" className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-heritage-gold/50 transition-colors font-sans text-sm backdrop-blur-sm" placeholder="contact@estate.com" />
+            <div className="space-y-1">
+              <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-500">Email Address</label>
+              <input type="email" className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-heritage-gold transition-colors font-sans text-sm placeholder-gray-700" placeholder="contact@estate.com" />
             </div>
           </div>
 
-          <div className="space-y-2">
-            <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400">Property / Estate Name</label>
-            <input type="text" className="w-full bg-white/5 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-heritage-gold/50 transition-colors font-sans text-sm backdrop-blur-sm" placeholder="e.g., The Vanderbilt Estate" />
+          <div className="space-y-1">
+            <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-500">Property / Estate Name</label>
+            <input type="text" className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-heritage-gold transition-colors font-sans text-sm placeholder-gray-700" placeholder="e.g., The Vanderbilt Estate" />
           </div>
 
-          <div className="space-y-2">
-            <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400">Project Classification</label>
+          <div className="space-y-1">
+            <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-500">Project Classification</label>
             <select 
               value={projectType}
               onChange={(e) => setProjectType(e.target.value)}
-              className="w-full bg-black/50 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-heritage-gold/50 transition-colors font-sans text-sm appearance-none backdrop-blur-sm"
+              className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-heritage-gold transition-colors font-sans text-sm appearance-none"
             >
               <option value="" disabled>Select Classification...</option>
               <option value="Private Estate">Private Estate Installation</option>
@@ -98,12 +98,12 @@ export default function Consultation() {
             </motion.div>
           ) : (
             <>
-              <div className="space-y-2">
-                <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400">Anticipated Investment Tier</label>
+              <div className="space-y-1">
+                <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-500">Anticipated Investment Tier</label>
                 <select 
                   value={investmentTier}
                   onChange={(e) => setInvestmentTier(e.target.value)}
-                  className="w-full bg-black/50 border border-white/10 px-4 py-3 text-white focus:outline-none focus:border-heritage-gold/50 transition-colors font-sans text-sm appearance-none backdrop-blur-sm"
+                  className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-heritage-gold transition-colors font-sans text-sm appearance-none"
                 >
                   <option value="" disabled>Select Tier...</option>
                   <option value="$25k-$50k">$25,000 - $50,000 (Minimum)</option>
@@ -153,7 +153,7 @@ export default function Consultation() {
                 <button 
                   type="button"
                   disabled={!termsAccepted || !projectType || !investmentTier || !machineryAccess}
-                  className="w-full bg-heritage-gold/90 backdrop-blur-sm text-industrial-charcoal-dark font-sans text-[10px] tracking-[0.3em] uppercase py-5 hover:bg-heritage-gold disabled:opacity-50 disabled:hover:bg-heritage-gold/90 transition-colors duration-300 flex items-center justify-center group font-medium"
+                  className="w-full bg-gold-gradient shadow-lg shadow-heritage-gold/20 text-industrial-charcoal-dark font-sans text-[10px] tracking-[0.3em] uppercase py-5 hover:brightness-110 hover:shadow-heritage-gold/30 disabled:opacity-50 disabled:hover:brightness-100 disabled:hover:shadow-none transition-all duration-300 flex items-center justify-center group font-semibold"
                 >
                   Submit for Review
                   <ArrowRight size={16} className="ml-3 group-hover:translate-x-1 transition-transform" />

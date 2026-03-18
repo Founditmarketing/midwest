@@ -6,10 +6,12 @@ export default function Hero() {
     <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-industrial-charcoal-dark">
       {/* Background Image with Parallax */}
       <div className="absolute inset-0 z-0">
-        <div 
+        <motion.div 
+          animate={{ scale: [1, 1.05, 1] }}
+          transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
           className="w-full h-full bg-cover bg-center bg-fixed opacity-50"
           style={{ backgroundImage: "url('https://midwestwindmillcompany.com/wp-content/uploads/2022/12/IMG-3793-scaled.jpg')" }}
-        ></div>
+        ></motion.div>
         <div className="absolute inset-0 bg-gradient-to-b from-industrial-charcoal-dark/90 via-industrial-charcoal-dark/40 to-industrial-charcoal-dark"></div>
       </div>
 
@@ -19,7 +21,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="font-sans text-[10px] md:text-xs tracking-[0.5em] uppercase text-heritage-gold mb-12 font-light"
+          className="font-sans text-[10px] md:text-xs tracking-[0.5em] uppercase text-gold-gradient mb-12 font-semibold"
         >
           Preserving the past. Powering the future.
         </motion.p>
