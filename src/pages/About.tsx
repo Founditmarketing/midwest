@@ -15,9 +15,9 @@ export default function About() {
             className="w-full aspect-[4/5] relative overflow-hidden shadow-2xl"
           >
             <img 
-               src="/images/restored-heritage-windmill.png" 
-               alt="Family heritage windmill" 
-               className="w-full h-full object-cover grayscale-[30%]"
+               src="/images/mark_henry.jpeg" 
+               alt="Mark Henry - Founder of Midwest Windmill Company" 
+               className="w-full h-full object-cover grayscale-[20%]"
             />
             <div className="absolute inset-0 bg-industrial-charcoal-dark/20"></div>
           </motion.div>
@@ -28,21 +28,21 @@ export default function About() {
             transition={{ duration: 1, delay: 0.3 }}
             className="space-y-10"
           >
-            <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-gold-gradient font-semibold block">The Firm</span>
+            <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-gold-gradient font-semibold block">Master Craftsman</span>
             <h1 className="font-serif text-5xl md:text-7xl text-white font-light tracking-tight leading-[1.1]">
-              A Legacy of <br/>
-              <span className="italic text-gray-400">American Steel</span>
+              Meet <br/>
+              <span className="italic text-gray-400">Mark Henry</span>
             </h1>
             <div className="w-16 h-[1px] bg-heritage-gold/40"></div>
             <div className="space-y-6 font-sans text-gray-300 font-light leading-relaxed text-sm md:text-base">
               <p>
-                Established in 2012, Midwest Windmill Company was born out of a profound respect for authentic Midwestern craftsmanship. We are family-owned and operated, dedicated to restoring and preserving the vintage windmills that built the heart of this country.
+                I'm Mark Henry, founder of Midwest Windmill Company. What started in 2012 out of a profound respect for authentic Midwestern craftsmanship has grown into a lifelong dedication to restoring and preserving the vintage windmills that built the heart of this country.
               </p>
               <p>
-                For generations, the windmill has been a symbol of resilience, innovation, and self-reliance. Over the years, we have preserved and saved thousands of windmills all over the United States, cementing our reputation as the nation’s premier heritage engineering firm.
+                For generations, the windmill has been a symbol of resilience, innovation, and self-reliance. Over the years, my family and I have personally preserved and saved thousands of windmills all over the United States, cementing our reputation as the nation’s premier heritage engineering team.
               </p>
               <p>
-                Whether providing sub-surface aeration for luxury resorts or erecting massive architectural statements on private estates, we refuse to compromise. There is no substitute for 100% American-made quality, and that peerless standard is built into every tower we touch.
+                Whether we are providing sub-surface aeration for luxury resorts or erecting massive architectural statements on private estates, I refuse to compromise. There is no substitute for 100% American-made quality, and I ensure that peerless standard is built into every tower we touch.
               </p>
             </div>
           </motion.div>
