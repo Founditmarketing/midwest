@@ -14,6 +14,7 @@ import LegacyParts from './pages/LegacyParts';
 import Portfolio from './pages/Portfolio';
 import Services from './pages/Services';
 import Craftsman from './pages/Craftsman';
+import Pricing from './pages/Pricing';
 import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/services" element={<Services />} />
           <Route path="/craftsman" element={<Craftsman />} />
+          <Route path="/pricing" element={<Pricing />} />
           <Route path="/consultation" element={<Consultation />} />
           <Route path="/legacy-parts" element={<LegacyParts />} />
         </Routes>
