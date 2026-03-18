@@ -14,10 +14,12 @@ import LegacyParts from './pages/LegacyParts';
 import Portfolio from './pages/Portfolio';
 import Services from './pages/Services';
 import Craftsman from './pages/Craftsman';
+import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen bg-industrial-charcoal text-white selection:bg-heritage-gold selection:text-industrial-charcoal-dark font-sans">
         <Navbar />
         <Routes>
