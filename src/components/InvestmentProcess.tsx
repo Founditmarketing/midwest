@@ -28,9 +28,6 @@ export default function InvestmentProcess() {
 
           <div className="w-16 md:w-24 h-[1px] bg-heritage-gold/30 mx-auto my-10 md:my-16"></div>
 
-          <p className="font-sans text-sm md:text-xl text-gray-400 leading-[1.8] md:leading-loose font-light mx-auto">
-            Due to the bespoke nature of our heritage projects, a formal consultation is required to assess your engineering requirements and site logistics. Custom installations begin at <span className="text-heritage-gold">$25,000</span>.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-x-20 md:gap-y-24 mt-20 md:mt-32 text-left">
