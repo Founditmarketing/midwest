@@ -15,12 +15,34 @@ const apiMockPlugin = () => ({
         });
         req.on('end', async () => {
           try {
-            if (body) {
-              req.body = JSON.parse(body);
-            }
+            // Mock Vercel Edge Request Object
+            const webReq = {
+              method: req.method,
+              json: async () => body ? JSON.parse(body) : {}
+            } as any;
+            
             const handler = await server.ssrLoadModule('/api/chat.ts');
-            await handler.default(req, res);
-          } catch (e) {
+            const webRes = await handler.default(webReq);
+
+            if (webRes && webRes.body) {
+               res.writeHead(webRes.status || 200, Object.fromEntries(webRes.headers.entries()));
+               const reader = webRes.body.getReader();
+               const processStream = async () => {
+                 while (true) {
+                   const { done, value } = await reader.read();
+                   if (done) {
+                     res.end();
+                     break;
+                   }
+                   res.write(value);
+                 }
+               };
+               processStream();
+            } else {
+               res.statusCode = webRes?.status || 200;
+               res.end();
+            }
+          } catch (e: any) {
             console.error('API Error:', e);
             res.statusCode = 500;
             res.end(JSON.stringify({ error: e.message }));
