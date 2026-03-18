@@ -166,7 +166,7 @@ export default function Consultation() {
                       className="w-full bg-black/50 border border-white/20 p-4 text-white focus:outline-none focus:border-heritage-gold transition-colors font-sans text-sm appearance-none"
                     >
                       <option value="" disabled>Select Tier...</option>
-                      <option value="$25k-$50k">$25,000 - $50,000 (Minimum)</option>
+                      <option value="$10k-$50k">$10,000 - $50,000 (Minimum)</option>
                       <option value="$50k-$100k">$50,000 - $100,000</option>
                       <option value="$100k+">$100,000+</option>
                     </select>
@@ -200,7 +200,7 @@ export default function Consultation() {
                         className="hidden"
                       />
                       <span className="font-sans text-xs text-gray-400 font-light leading-relaxed">
-                        I acknowledge that Midwest Windmill is a premium heritage engineering firm. We do not provide phone support for DIY repairs. Our minimum project commission begins at $25,000.
+                        I acknowledge that Midwest Windmill is a premium heritage engineering firm. We do not provide phone support for DIY repairs. Our minimum project commission begins at $10,000.
                       </span>
                     </label>
                   </div>
