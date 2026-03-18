@@ -58,15 +58,15 @@ export default function Heritage() {
               <p className="font-sans text-gray-300 leading-[2] md:leading-loose font-light text-xs md:text-base">
                 At Midwest Windmill Company, we’re passionate about farm windmills. Our team has preserved and saved thousands of windmills all over the United States, becoming the most trusted name for bespoke heritage engineering.
               </p>
-              <p className="font-sans text-gray-400 leading-[2] md:leading-loose font-light text-xs md:text-base">
-                There is absolutely no substitute for American-made quality. While others rely on imported, mass-produced parts, we incorporate peerless craftsmanship into every windmill and tower we touch. Built right in the heart of the Midwest, our bulletproof structures are designed not just to function, but to endure.
+              <p className="font-sans text-sm md:text-base text-gray-400 font-light leading-relaxed">
+                There is absolutely no substitute for American-made quality. While others rely on imported, mass-produced parts, we incorporate peerless craftsmanship into every windmill and tower we touch. Built right in the heart of the Midwest, our structures offer historically proven durability, designed not just to function, but to endure.
               </p>
             </div>
 
             <div className="pt-8 border-t border-white/10 flex items-center justify-between sm:justify-start sm:space-x-12">
-              <div>
-                <div className="font-serif text-4xl text-heritage-gold mb-1 md:mb-2 font-light">10k+</div>
-                <div className="font-sans text-[8px] md:text-[9px] tracking-[0.2em] uppercase text-gray-500 font-light">Windmills Saved</div>
+              <div className="border-x border-white/10 px-4 md:px-8">
+                <div className="font-serif text-4xl text-heritage-gold mb-1 md:mb-2 font-light">5k+</div>
+                <div className="font-sans text-[8px] md:text-[9px] tracking-[0.2em] uppercase text-gray-400 font-light">Windmills Saved</div>
               </div>
               <div>
                 <div className="font-serif text-4xl text-heritage-gold mb-1 md:mb-2 font-light">100%</div>

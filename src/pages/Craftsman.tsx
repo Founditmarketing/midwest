@@ -39,7 +39,7 @@ export default function Craftsman() {
                 I'm Mark Henry, founder of Midwest Windmill Company. What started in 2012 out of a profound respect for authentic Midwestern craftsmanship has grown into a lifelong dedication to restoring and preserving the vintage windmills that built the heart of this country.
               </p>
               <p>
-                For generations, the windmill has been a symbol of resilience, innovation, and self-reliance. Over the years, my family and I have personally preserved and saved thousands of windmills all over the United States, cementing our reputation as the nation’s premier heritage engineering team.
+                For generations, the windmill has been a symbol of resilience, innovation, and self-reliance. As a U.S. patent holder for science and technology in wind research, I blend time-tested historical restoration with modern engineering. Over the years, my team and I have personally preserved and saved thousands of windmills all over the United States, cementing our reputation as the nation’s premier heritage experts.
               </p>
               <p>
                 Whether we are providing sub-surface aeration for luxury resorts or erecting massive architectural statements on private estates, I refuse to compromise. There is no substitute for 100% American-made quality, and I ensure that peerless standard is built into every tower we touch.
@@ -54,7 +54,7 @@ export default function Craftsman() {
             <div className="font-sans text-[9px] tracking-[0.2em] uppercase text-gray-500">Year Founded</div>
           </div>
           <div className="border-x border-white/10">
-            <div className="font-serif text-5xl text-heritage-gold mb-2 font-light">10k+</div>
+            <div className="font-serif text-5xl text-heritage-gold mb-2 font-light">5k+</div>
             <div className="font-sans text-[9px] tracking-[0.2em] uppercase text-gray-500">Windmills Saved</div>
           </div>
           <div>
