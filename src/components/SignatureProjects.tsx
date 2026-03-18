@@ -8,7 +8,7 @@ const projects = [
     title: 'The Grand Resort',
     location: 'Aspen, Colorado',
     description: 'A 60-foot heritage installation serving as the centerpiece for a world-class mountain resort.',
-    image: '/images/resort_farm_windmill.png'
+    image: '/images/realistic_resort_windmill.png'
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const projects = [
     title: 'The Willow Wedding Venue',
     location: 'Napa Valley, California',
     description: 'A picturesque landmark providing the perfect backdrop for exclusive private events.',
-    image: '/images/wedding_farm_windmill.png'
+    image: '/images/realistic_wedding_windmill.png'
   }
 ];
 
