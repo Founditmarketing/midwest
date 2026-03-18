@@ -54,8 +54,8 @@ export default function SignatureProjects() {
               className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center`}
             >
               <motion.div 
-                initial={{ clipPath: 'inset(0 100% 0 0)' }}
-                whileInView={{ clipPath: 'inset(0 0% 0 0)' }}
+                initial={{ opacity: 0, scale: 1.05, filter: 'blur(10px)' }}
+                whileInView={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ duration: 2.4, ease: [0.16, 1, 0.3, 1] }}
                 className="w-full md:w-7/12 relative z-0 group overflow-hidden shadow-2xl"
