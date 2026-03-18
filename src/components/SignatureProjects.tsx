@@ -7,28 +7,28 @@ const projects = [
     id: 1,
     title: 'Winter Windmill',
     location: 'Kirksville, Missouri',
-    description: 'A genuine heritage installation standing resilient against the harsh Midwestern winter, providing reliable sub-surface aeration year-round.',
+    description: 'An 8-foot windmill on a 33-foot tower, sold and installed for year-round sub-surface pond aeration in the harsh Midwestern winter.',
     image: '/images/kirksville.jpeg'
   },
   {
     id: 2,
     title: 'Northern Lights Installation',
     location: 'Location Undisclosed',
-    description: 'A monument to American steel standing resolutely beneath the Aurora Borealis, engineered to withstand extreme sub-zero conditions.',
+    description: 'A complete windmill system sold and shipped to withstand extreme sub-zero conditions — still pumping strong years later.',
     image: '/images/northern-lights.jpeg'
   },
   {
     id: 3,
     title: 'Kansas Homestead',
     location: 'Kansas',
-    description: 'A functioning heritage landmark providing sub-surface aeration and timeless aesthetic value to an expansive Midwestern homestead.',
+    description: 'A complete pumping windmill sold and installed on an expansive Kansas homestead for pond aeration and livestock watering.',
     image: '/images/kansas.jpg'
   },
   {
     id: 4,
     title: 'Silver T Ranch',
     location: 'Texas',
-    description: 'A monumental heritage installation standing proudly against the Texas skyline, embodying the enduring legacy of American steel.',
+    description: 'A 16-foot windmill on a 40-foot tower sold and installed on this iconic Texas ranch — one of our largest complete systems.',
     image: '/images/silver-t-ranch.png'
   }
 ];
@@ -41,12 +41,12 @@ export default function SignatureProjects() {
           <div className="max-w-2xl">
             <h2 className="font-sans text-[9px] md:text-[10px] tracking-[0.3em] md:tracking-[0.4em] uppercase text-heritage-gold mb-4 md:mb-6 font-light">Signature Projects</h2>
             <h3 className="font-serif text-5xl md:text-6xl text-white leading-[1.1] md:leading-tight font-light tracking-tight">
-              Curators of<br className="hidden md:block" />
-              <span className="italic text-gray-300"> American Heritage</span>
+              Installed<br className="hidden md:block" />
+              <span className="italic text-gray-300"> Across America</span>
             </h3>
           </div>
           <p className="font-sans text-xs md:text-sm text-gray-400 max-w-md mt-6 md:mt-0 leading-[2] md:leading-loose font-light">
-            Our portfolio represents the pinnacle of heritage engineering. We select only a limited number of commissions each year to ensure uncompromising quality and exclusivity.
+            Thousands of satisfied customers across the country trust Midwest Windmill for complete windmill systems. Here are a few of our favorite installations.
           </p>
         </div>
 
@@ -94,8 +94,8 @@ export default function SignatureProjects() {
                     transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
                     className="h-[1px] bg-heritage-gold/50"
                   ></motion.div>
-                  <Link to="/consultation" className="text-heritage-gold uppercase text-[9px] md:text-[10px] tracking-[0.2em] hover:text-white transition-colors">
-                    View Project
+                  <Link to="/pricing" className="text-heritage-gold uppercase text-[9px] md:text-[10px] tracking-[0.2em] hover:text-white transition-colors">
+                    Get a Similar Setup
                   </Link>
                 </div>
               </motion.div>

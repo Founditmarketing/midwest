@@ -16,7 +16,7 @@ export default function Consultation() {
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const isLegacyParts = formData.projectType === 'Legacy Parts/DIY';
+  const isLegacyParts = formData.projectType === 'Replacement Parts';
 
   const updateForm = (field: string, value: any) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -45,11 +45,11 @@ export default function Consultation() {
         {!isSubmitted && (
            <div className="mb-16">
               <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-heritage-gold block mb-4 font-light text-center">
-                Private Consultation
+                Free Quote Request
               </span>
               <h1 className="font-serif text-5xl md:text-6xl text-white leading-tight mb-8 font-light text-center">
-                Bespoke Engineering Request
-              </h1>
+              Request a Free Quote
+            </h1>
               
               {/* Progress Bar */}
               <div className="flex justify-center items-center space-x-4 mb-12">
@@ -80,7 +80,7 @@ export default function Consultation() {
               </div>
               <h2 className="font-serif text-4xl text-white mb-6 font-light tracking-wide">Inquiry Received</h2>
               <p className="font-sans text-gray-400 leading-relaxed font-light max-w-lg mx-auto mb-8 text-sm md:text-base">
-                Thank you for considering Midwest Windmill for your estate. Our lead engineer will review your project details and, if selected, our executive assistant will contact you within 48 hours to schedule your private consultation.
+                Thank you for your interest in Midwest Windmill! We've received your information and one of our windmill experts will be in touch within 48 hours with a personalized quote.
               </p>
               <Link to="/" className="inline-block mt-4 text-[10px] tracking-[0.2em] uppercase text-heritage-gold hover:text-white transition-colors">
                 Return to Portfolio →
@@ -114,13 +114,13 @@ export default function Consultation() {
               {step === 2 && (
                 <div className="space-y-10">
                   <div className="space-y-1">
-                    <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400">Property / Estate Name</label>
-                    <input type="text" required value={formData.property} onChange={e => updateForm('property', e.target.value)} className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-heritage-gold transition-colors font-sans text-sm placeholder-gray-700" placeholder="e.g., The Vanderbilt Estate" />
+                    <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400">Property / Ranch / Farm Name</label>
+                    <input type="text" required value={formData.property} onChange={e => updateForm('property', e.target.value)} className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-heritage-gold transition-colors font-sans text-sm placeholder-gray-700" placeholder="e.g., Johnson Family Ranch" />
                   </div>
                   <div className="space-y-3">
                     <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400">Project Classification</label>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                      {['Private Estate', 'Luxury Resort', 'Wedding/Event Venue', 'Historical Restoration', 'Legacy Parts/DIY'].map(type => (
+                      {['Farm / Ranch', 'Residential Property', 'Commercial / Business', 'Pond Aeration', 'Windmill Restoration', 'Replacement Parts'].map(type => (
                         <button
                           key={type}
                           type="button"
@@ -166,9 +166,9 @@ export default function Consultation() {
                       className="w-full bg-black/50 border border-white/20 p-4 text-white focus:outline-none focus:border-heritage-gold transition-colors font-sans text-sm appearance-none"
                     >
                       <option value="" disabled>Select Tier...</option>
-                      <option value="$10k-$50k">$10,000 - $50,000 (Minimum)</option>
-                      <option value="$50k-$100k">$50,000 - $100,000</option>
-                      <option value="$100k+">$100,000+</option>
+                      <option value="$5k-$10k">$5,000 - $10,000</option>
+                      <option value="$10k-$20k">$10,000 - $20,000</option>
+                      <option value="$20k+">$20,000+</option>
                     </select>
                   </div>
 
@@ -200,7 +200,7 @@ export default function Consultation() {
                         className="hidden"
                       />
                       <span className="font-sans text-xs text-gray-400 font-light leading-relaxed">
-                        I acknowledge that Midwest Windmill is a premium heritage engineering firm. We do not provide phone support for DIY repairs. Our minimum project commission begins at $10,000.
+                        I understand that pricing varies based on windmill size, tower height, and installation requirements. I'd like Midwest Windmill to contact me with a personalized quote.
                       </span>
                     </label>
                   </div>

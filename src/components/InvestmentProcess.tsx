@@ -18,12 +18,12 @@ export default function InvestmentProcess() {
           className="space-y-6 md:space-y-8 max-w-4xl mx-auto"
         >
           <span className="font-sans text-[9px] md:text-[10px] tracking-[0.3em] md:tracking-[0.5em] uppercase text-heritage-gold block font-light">
-            Investment & Process
+            How It Works
           </span>
           
           <h2 className="font-serif text-5xl md:text-7xl text-white leading-[1.1] md:leading-[1.1] font-light tracking-tight">
-            The White-Glove<br className="hidden md:block"/>
-            <span className="italic font-light text-gray-400"> Commission Experience</span>
+            From Order<br className="hidden md:block"/>
+            <span className="italic font-light text-gray-400"> to Installation</span>
           </h2>
 
           <div className="w-16 md:w-24 h-[1px] bg-heritage-gold/30 mx-auto my-10 md:my-16"></div>
@@ -34,27 +34,27 @@ export default function InvestmentProcess() {
           {[
             { 
               step: '01', 
-              timeline: 'Week 1', 
-              title: 'Private Scoping Consultation', 
-              desc: 'We begin with a private consultation to understand the architectural vision of your property. Our experts discuss your landscaping needs, whether aesthetic or functional aeration, and evaluate site feasibility to provide a tailored project scope.' 
+              timeline: 'Day 1', 
+              title: 'Call or Inquire Online', 
+              desc: 'Give us a call or fill out our online form. Tell us about your property, what you need the windmill for — pumping water, aerating a pond, watering livestock — and we\'ll start putting together your options.' 
             },
             { 
               step: '02', 
-              timeline: 'Weeks 2-3', 
-              title: 'Site Engineering & Logistics', 
-              desc: 'Our principal engineers analyze wind patterns, soil composition, and terrain logistics. We calculate sub-surface aeration requirements for ponds or structural load testing for grand estates to ensure your installation will operate flawlessly.' 
+              timeline: 'Days 2-3', 
+              title: 'We Help You Choose', 
+              desc: 'Our experts will recommend the right windmill size, tower height, and configuration for your property. Whether you need an 8-foot wheel for a backyard pond or a 16-foot system for a large ranch, we\'ll match you with the perfect setup.' 
             },
             { 
               step: '03', 
-              timeline: 'Weeks 4-10', 
-              title: 'Bespoke Fabrication', 
-              desc: 'True American craftsmanship takes time. Each tower and windmill head is forged from heavy-gauge galvanized steel in the Midwest. We rigorously assemble and balance the components to absolute historical and mechanical perfection.' 
+              timeline: 'Weeks 2-8', 
+              title: 'Built & Shipped', 
+              desc: 'Your complete windmill system is fabricated from heavy-gauge galvanized steel right here in the Midwest. Once built, it\'s shipped unassembled directly to your property, ready for installation.' 
             },
             { 
               step: '04', 
-              timeline: 'Week 11', 
-              title: 'White-Glove Installation', 
-              desc: 'Our specialized crew travels directly to your estate with the completed machinery. Using heavy cranes and precision alignment, we erect your fully functioning landmark—leaving your landscape pristine and your new windmill powering the future.' 
+              timeline: 'Installation Day', 
+              title: 'Professional Install or DIY', 
+              desc: 'Choose our professional installation crew to erect your windmill on-site, or set it up yourself with our guidance. Either way, you\'ll have a fully functioning American-made windmill powering your water supply.' 
             }
           ].map((s, idx) => (
             <motion.div 
@@ -89,7 +89,7 @@ export default function InvestmentProcess() {
             to="/consultation"
             className="flex md:inline-flex items-center justify-center px-8 py-4 md:px-12 md:py-5 w-full md:w-auto border border-heritage-gold text-heritage-gold hover:bg-heritage-gold hover:text-industrial-charcoal-dark transition-all duration-500 font-sans text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-[0.3em] uppercase group"
           >
-            Request a Consultation
+            Get a Free Quote
             <span className="ml-4 group-hover:translate-x-2 transition-transform duration-300">→</span>
           </Link>
         </motion.div>

@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
           <div>
              <div className="text-[10px] tracking-widest uppercase text-gray-500 mb-2">Service Area</div>
-             <div className="text-sm text-gray-300">Proudly serving the entire United States via our heritage engineering network.</div>
+             <div className="text-sm text-gray-300">Proudly selling and installing windmills across the entire United States.</div>
           </div>
         </div>
 

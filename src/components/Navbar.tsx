@@ -50,7 +50,7 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Link to="/consultation" className="font-sans text-[10px] tracking-[0.2em] uppercase text-heritage-gold hover:text-industrial-charcoal-dark hover:bg-heritage-gold transition-all duration-300 border border-heritage-gold/30 px-6 py-2.5 rounded-sm font-light">Private Consultations</Link>
+            <Link to="/consultation" className="font-sans text-[10px] tracking-[0.2em] uppercase text-heritage-gold hover:text-industrial-charcoal-dark hover:bg-heritage-gold transition-all duration-300 border border-heritage-gold/30 px-6 py-2.5 rounded-sm font-light">Get a Quote</Link>
           </div>
 
           <button 
@@ -84,7 +84,7 @@ export default function Navbar() {
               to="/consultation" 
               className="mt-8 font-sans text-xs tracking-widest uppercase text-heritage-gold border border-heritage-gold/30 px-8 py-3 rounded-sm"
             >
-              Consultations
+              Get a Quote
             </Link>
           </motion.div>
         )}

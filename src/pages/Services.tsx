@@ -7,29 +7,29 @@ const services = [
   {
     num: '01',
     icon: <Wind size={20} className="text-heritage-gold" strokeWidth={1.5} />,
-    title: 'Custom Windmill Installation',
-    desc: 'From sprawling agricultural estates to high-end commercial resorts, we provide end-to-end white-glove installation of authentic steel windmills. We don’t just erect a structure; we craft a functioning historical landmark that dominates the horizon absolute permanence.',
+    title: 'Complete Windmill Sales',
+    desc: 'We sell original American-made pumping farm windmills as complete systems — wheel, tower, and all hardware included. Whether you need a compact 8-foot wheel for a backyard pond or a massive 16-foot system for a working ranch, we have the right windmill for you. Shipped unassembled with professional installation available.',
     image: '/images/midwest-windmill-installation.png'
   },
   {
     num: '02',
     icon: <Droplets size={20} className="text-heritage-gold" strokeWidth={1.5} />,
     title: 'Pond Aeration & Water Delivery',
-    desc: 'Midwest Windmill is the only firm with the capability to retrofit older windmills for modern pond aeration. We utilize sub-surface mathematical engineering and massive rotor torque to deeply oxygenate massive bodies of water, eliminating algae and fostering aquatic life.',
+    desc: 'Our windmills pump water and deeply aerate ponds to eliminate algae and promote healthy aquatic life. Whether you need to fill a farm pond, oxygenate a large lake, or deliver water to livestock, we\'ll set you up with the right system for the job.',
     image: '/images/lake-aeration-system.png'
   },
   {
     num: '03',
     icon: <Wrench size={20} className="text-heritage-gold" strokeWidth={1.5} />,
     title: 'Heritage Repairs & Restoration',
-    desc: 'Our master craftsmen have preserved thousands of vintage windmills across the country. We repair catastrophic storm damage, replace rusted motors with heavily-calibrated modern equivalents, and completely restore leaning towers to their absolute original glory.',
+    desc: 'Our team has saved and restored thousands of vintage windmills across the United States. We repair storm damage, replace worn motors, restore leaning towers, and bring old windmills back to full working condition with quality American parts.',
     image: '/images/restored-heritage-windmill.png'
   },
     {
     num: '04',
     icon: <PackageSearch size={20} className="text-heritage-gold" strokeWidth={1.5} />,
     title: 'Replacement Parts Logistics',
-    desc: 'Beyond full-scale installations, we act as the premier supplier for rare and standard Aermotor replacement parts. We ship high-grade American steel components directly to your site, bypassing cheap imports to guarantee decade-spanning durability.',
+    desc: 'Need parts for your existing windmill? We\'re the nation\'s top supplier for Aermotor replacement parts and accessories. All parts are American-made, heavy-grade steel — no cheap imports. We ship directly to your door.',
     image: '/images/aermotor-replacement-parts.png'
   }
 ];
@@ -74,7 +74,7 @@ export default function Services() {
             className="font-serif text-5xl md:text-7xl text-white tracking-tight leading-[1.1]"
           >
             Engineering<br className="hidden md:block"/>
-            <span className="italic text-gray-400"> Excellence</span>
+            <span className="italic text-gray-400"> & Services</span>
           </motion.h1>
         </div>
       </section>
@@ -156,14 +156,14 @@ export default function Services() {
            transition={{ duration: 1 }}
          >
            <h3 className="font-serif text-4xl md:text-5xl text-white tracking-tight mb-12 leading-[1.1]">
-              Ready to create your<br className="hidden md:block"/>
-              <span className="italic text-gray-400"> heritage landmark?</span>
+              Ready to get<br className="hidden md:block"/>
+              <span className="italic text-gray-400"> your windmill?</span>
            </h3>
            <Link 
               to="/consultation"
               className="inline-flex items-center justify-center px-12 py-5 border border-heritage-gold/50 text-heritage-gold hover:bg-heritage-gold hover:text-industrial-charcoal-dark transition-all duration-500 font-sans text-[9px] md:text-[10px] tracking-[0.3em] uppercase group"
             >
-              Request a Consultation
+              Get a Free Quote
               <span className="ml-4 group-hover:translate-x-2 transition-transform duration-300">→</span>
            </Link>
          </motion.div>

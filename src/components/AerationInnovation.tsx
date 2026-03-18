@@ -16,7 +16,7 @@ export default function AerationInnovation() {
           >
             <div>
               <span className="font-sans text-[9px] md:text-[10px] tracking-[0.3em] md:tracking-[0.4em] uppercase text-gold-gradient block mb-4 md:mb-6 font-semibold">
-                Heritage Engineering
+                What Our Windmills Do
               </span>
               <h2 className="font-serif text-5xl md:text-6xl text-white leading-[1.1] md:leading-tight font-light tracking-tight">
                 Built to Last.<br className="hidden md:block"/>
@@ -25,7 +25,7 @@ export default function AerationInnovation() {
             </div>
             
             <p className="font-sans text-gray-300 leading-[2] md:leading-loose font-light text-xs md:text-base">
-              Our windmills are not merely aesthetic; they are calibrated using time-tested mathematical methods. From pumping water for private estates to deeply aerating expansive commercial ponds, we provide the innovation required to secure your water supply.
+              Our farm windmills are calibrated using time-tested mathematical methods, proven to last for decades with proper maintenance. You can pump water for your home, fill ponds, aerate ponds, water whole orchards, and water livestock. We know the importance of your water supply — that's why we sell only quality windmills built to last.
             </p>
 
             <div className="space-y-6 md:space-y-8 pt-8 border-t border-white/10">
@@ -34,8 +34,8 @@ export default function AerationInnovation() {
                   <Wind className="text-heritage-gold" size={20} md:size={24} strokeWidth={1.5} />
                 </div>
                 <div>
-                  <h4 className="font-serif text-xl md:text-2xl text-white mb-2 font-light tracking-wide">Historical Aesthetics</h4>
-                  <p className="font-sans text-xs md:text-sm text-gray-400 font-light leading-relaxed">Elevate your landscape with a functioning landmark that honors the American frontier without sacrificing modern reliability.</p>
+                  <h4 className="font-serif text-xl md:text-2xl text-white mb-2 font-light tracking-wide">Classic American Design</h4>
+                  <p className="font-sans text-xs md:text-sm text-gray-400 font-light leading-relaxed">Every windmill we sell is an original American-made steel design — a timeless addition to any farm, ranch, or homestead.</p>
                 </div>
               </div>
 
@@ -45,7 +45,7 @@ export default function AerationInnovation() {
                 </div>
                 <div>
                   <h4 className="font-serif text-xl md:text-2xl text-white mb-2 font-light tracking-wide">Water Delivery & Aeration</h4>
-                  <p className="font-sans text-xs md:text-sm text-gray-400 font-light leading-relaxed">Engineered for sub-surface aeration to prevent algae blooms, or robust water pumping to fill ponds and water entire orchards.</p>
+                  <p className="font-sans text-xs md:text-sm text-gray-400 font-light leading-relaxed">Our windmills pump water for homes, fill and aerate ponds to prevent algae, and water entire orchards and livestock operations.</p>
                 </div>
               </div>
 
@@ -55,7 +55,7 @@ export default function AerationInnovation() {
                 </div>
                 <div>
                   <h4 className="font-serif text-xl md:text-2xl text-white mb-2 font-light tracking-wide">Generational Lifespan</h4>
-                  <p className="font-sans text-xs md:text-sm text-gray-400 font-light leading-relaxed">Constructed from heavy-gauge galvanized steel. When properly maintained, our bespoke windmills operate flawlessly for decades.</p>
+                  <p className="font-sans text-xs md:text-sm text-gray-400 font-light leading-relaxed">Constructed from heavy-gauge galvanized steel and built right in the Midwest. With proper maintenance, our windmills operate flawlessly for decades.</p>
                 </div>
               </div>
             </div>
