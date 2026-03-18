@@ -9,28 +9,28 @@ const services = [
     icon: <Wind size={20} className="text-heritage-gold" strokeWidth={1.5} />,
     title: 'Custom Windmill Installation',
     desc: 'From sprawling agricultural estates to high-end commercial resorts, we provide end-to-end white-glove installation of authentic steel windmills. We don’t just erect a structure; we craft a functioning historical landmark that dominates the horizon absolute permanence.',
-    image: '/images/realistic_hero_windmill.png'
+    image: '/images/midwest-windmill-installation.png'
   },
   {
     num: '02',
     icon: <Droplets size={20} className="text-heritage-gold" strokeWidth={1.5} />,
     title: 'Pond Aeration & Water Delivery',
     desc: 'Midwest Windmill is the only firm with the capability to retrofit older windmills for modern pond aeration. We utilize sub-surface mathematical engineering and massive rotor torque to deeply oxygenate massive bodies of water, eliminating algae and fostering aquatic life.',
-    image: '/images/realistic_aeration_windmill.png'
+    image: '/images/lake-aeration-system.png'
   },
   {
     num: '03',
     icon: <Wrench size={20} className="text-heritage-gold" strokeWidth={1.5} />,
     title: 'Heritage Repairs & Restoration',
     desc: 'Our master craftsmen have preserved thousands of vintage windmills across the country. We repair catastrophic storm damage, replace rusted motors with heavily-calibrated modern equivalents, and completely restore leaning towers to their absolute original glory.',
-    image: '/images/realistic_barn_windmill.png'
+    image: '/images/restored-heritage-windmill.png'
   },
     {
     num: '04',
     icon: <PackageSearch size={20} className="text-heritage-gold" strokeWidth={1.5} />,
     title: 'Replacement Parts Logistics',
     desc: 'Beyond full-scale installations, we act as the premier supplier for rare and standard Aermotor replacement parts. We ship high-grade American steel components directly to your site, bypassing cheap imports to guarantee decade-spanning durability.',
-    image: '/images/realistic_replacement_parts.png'
+    image: '/images/aermotor-replacement-parts.png'
   }
 ];
 
@@ -46,7 +46,7 @@ export default function Services() {
         <motion.div style={{ y: yBg }} className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-industrial-charcoal-dark/90 z-10"></div>
           <img 
-            src="/images/realistic_resort_windmill.png" 
+            src="/images/luxury-resort-windmill.png" 
             alt="Windmill at resort" 
             className="w-full h-full object-cover grayscale opacity-30"
           />

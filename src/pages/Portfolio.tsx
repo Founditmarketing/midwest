@@ -9,7 +9,7 @@ const projects = [
     location: 'Aspen, Colorado',
     description: 'A 60-foot heritage installation serving as the centerpiece for a world-class mountain resort.',
     category: 'Commercial Hospitality',
-    image: '/images/realistic_resort_windmill.png'
+    image: '/images/luxury-resort-windmill.png'
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const projects = [
     location: 'Newport, Rhode Island',
     description: 'Bespoke aeration innovation seamlessly integrated into a historic 19th-century landscape.',
     category: 'Private Estate',
-    image: '/images/estate_farm_windmill.png'
+    image: '/images/vanderbilt-estate-windmill.png'
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const projects = [
     location: 'Napa Valley, California',
     description: 'A picturesque landmark providing the perfect backdrop for exclusive private events.',
     category: 'Luxury Venue',
-    image: '/images/realistic_wedding_windmill.png'
+    image: '/images/willow-wedding-venue.png'
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const projects = [
     location: 'Great Plains, Nebraska',
     description: 'A massive multi-tower installation restoring classic American steel to an expansive family ranch property.',
     category: 'Agricultural Estate',
-    image: '/images/realistic_hero_windmill.png'
+    image: '/images/midwest-windmill-installation.png'
   },
   {
     id: 5,
@@ -41,7 +41,7 @@ const projects = [
     location: 'Orlando, Florida',
     description: 'Functional 35-foot galvanized steel windmill providing sub-surface aeration to a large commercial pond system.',
     category: 'Commercial Aeration',
-    image: '/images/realistic_aeration_windmill.png'
+    image: '/images/lake-aeration-system.png'
   },
   {
     id: 6,
@@ -49,7 +49,7 @@ const projects = [
     location: 'Lancaster, Pennsylvania',
     description: 'Authentic Aermotor windmill restoration complementing a 200-year-old stone and timber barn property.',
     category: 'Heritage Restoration',
-    image: '/images/realistic_barn_windmill.png'
+    image: '/images/restored-heritage-windmill.png'
   }
 ];
 

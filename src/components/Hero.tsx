@@ -1,17 +1,21 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion, useScroll, useTransform } from 'motion/react';
 import { Link } from 'react-router-dom';
 
 export default function Hero() {
+  const { scrollYProgress } = useScroll();
+  const yBg = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
+
   return (
     <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-industrial-charcoal-dark">
       {/* Background Image with Parallax */}
       <div className="absolute inset-0 z-0">
         <motion.div 
+          style={{ y: yBg, backgroundImage: "url('/images/midwest-windmill-installation.png')" }}
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
           className="w-full h-full bg-cover bg-center bg-fixed opacity-50"
-          style={{ backgroundImage: "url('/images/realistic_hero_windmill.png')" }}
+
         ></motion.div>
         <div className="absolute inset-0 bg-gradient-to-b from-industrial-charcoal-dark/90 via-industrial-charcoal-dark/40 to-industrial-charcoal-dark"></div>
       </div>

@@ -15,7 +15,7 @@ export default function About() {
             className="w-full aspect-[4/5] relative overflow-hidden shadow-2xl"
           >
             <img 
-               src="/images/realistic_barn_windmill.png" 
+               src="/images/restored-heritage-windmill.png" 
                alt="Family heritage windmill" 
                className="w-full h-full object-cover grayscale-[30%]"
             />

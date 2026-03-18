@@ -8,21 +8,21 @@ const projects = [
     title: 'The Grand Resort',
     location: 'Aspen, Colorado',
     description: 'A 60-foot heritage installation serving as the centerpiece for a world-class mountain resort.',
-    image: '/images/realistic_resort_windmill.png'
+    image: '/images/luxury-resort-windmill.png'
   },
   {
     id: 2,
     title: 'Private Equestrian Ranch',
     location: 'Austin, Texas',
     description: 'A functioning heritage landmark providing sub-surface aeration for a sprawling 5-acre private equestrian lake.',
-    image: '/images/realistic_ranch_windmill.png'
+    image: '/images/texas-equestrian-ranch.png'
   },
   {
     id: 3,
     title: 'The Willow Wedding Venue',
     location: 'Napa Valley, California',
     description: 'A picturesque landmark providing the perfect backdrop for exclusive private events.',
-    image: '/images/realistic_wedding_windmill.png'
+    image: '/images/willow-wedding-venue.png'
   }
 ];
 
