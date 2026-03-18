@@ -11,7 +11,7 @@ interface Message {
 export default function AIReceptionist() {
   const [isOpen, setIsOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([
-    { id: '1', role: 'model', text: 'Good day. I am the Executive Assistant to the Founder of Midwest Windmill. How may we assist with your heritage engineering project today?' }
+    { id: '1', role: 'model', text: 'Welcome to Midwest Windmill. I am the Executive Virtual Concierge for our engineering firm. Are you inquiring regarding a commercial project, private estate installation, or heritage restoration today?' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
@@ -102,13 +102,20 @@ export default function AIReceptionist() {
 
   return (
     <>
-      <button
-        onClick={() => setIsOpen(true)}
-        className="fixed bottom-8 right-8 z-50 flex items-center justify-center w-16 h-16 rounded-full bg-heritage-gold text-industrial-charcoal-dark shadow-[0_0_40px_rgba(197,160,89,0.3)] hover:bg-heritage-gold-light hover:scale-105 transition-all duration-300"
-        aria-label="Private Consultation"
-      >
-        <MessageSquare size={24} strokeWidth={1.5} />
-      </button>
+      <div className="fixed bottom-8 right-8 z-50 flex items-center group">
+        <span className="mr-4 px-4 py-2 bg-black/60 backdrop-blur-md border border-white/10 text-[10px] tracking-[0.2em] uppercase text-heritage-gold rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 font-sans shadow-lg pointer-events-none">
+          Live Concierge
+        </span>
+        <button
+          onClick={() => setIsOpen(true)}
+          className="relative flex items-center justify-center w-16 h-16 rounded-full bg-heritage-gold text-industrial-charcoal-dark shadow-[0_0_40px_rgba(197,160,89,0.3)] hover:bg-heritage-gold-light hover:scale-105 transition-all duration-300"
+          aria-label="Private Consultation"
+        >
+          <div className="absolute top-0 right-0 w-3.5 h-3.5 bg-green-500 rounded-full border-2 border-industrial-charcoal border-opacity-90"></div>
+          <div className="absolute top-0 right-0 w-3.5 h-3.5 bg-green-500 rounded-full animate-ping opacity-75"></div>
+          <MessageSquare size={24} strokeWidth={1.5} />
+        </button>
+      </div>
 
       <AnimatePresence>
         {isOpen && (
