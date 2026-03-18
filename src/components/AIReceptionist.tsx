@@ -88,12 +88,12 @@ export default function AIReceptionist() {
           }
         }
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error("Error communicating with backend API:", error);
       setMessages(prev => [...prev, { 
         id: Date.now().toString(), 
         role: 'model', 
-        text: 'I apologize, but I am currently unable to process your request. Please try again later or contact our office directly.' 
+        text: `Vercel Backend Error: ${error.message} \n\nCheck your Vercel Dashboard to ensure GEMINI_API_KEY is spelled correctly and the changes have been redeployed.` 
       }]);
     } finally {
       setIsLoading(false);

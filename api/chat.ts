@@ -1,6 +1,8 @@
 import { GoogleGenAI } from '@google/genai';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || 'MISSING_API_KEY' });
+export const config = {
+  runtime: 'edge', // Use Edge Runtime for perfect Vercel native streaming
+};
 
 const SYSTEM_INSTRUCTION = `You are the Executive Virtual Concierge for Midwest Windmill, a premier heritage engineering firm. 
 Your goal is to provide a white-glove, highly consultative experience for prospective clients interested in luxury installations.
@@ -17,34 +19,30 @@ YOUR DIRECTIVES:
 4. If they ask to book or seem highly qualified, provide the calendar link: "I have authorized priority scheduling for your project. Please select a time at your earliest convenience: https://calendly.com/midwest-windmill/vip-consultation"
 5. Do not overwhelm them with long paragraphs. Keep responses elegant, concise, and focused on guiding them to a formal consultation.`;
 
-export default async function handler(req, res) {
+export default async function handler(req: Request) {
   if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method Not Allowed' });
+    return new Response(JSON.stringify({ error: 'Method Not Allowed' }), { status: 405 });
   }
 
   try {
-    const { history, message } = req.body;
-
-    if (!message) {
-      return res.status(400).json({ error: 'Message is required' });
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+      throw new Error('GEMINI_API_KEY is not defined in Vercel. Please add it in the Vercel Dashboard Settings -> Environment Variables.');
     }
 
-    // Set headers for Server-Sent Events (SSE)
-    res.writeHead(200, {
-      'Content-Type': 'text/event-stream',
-      'Cache-Control': 'no-cache',
-      'Connection': 'keep-alive',
-    });
+    const ai = new GoogleGenAI({ apiKey });
 
-    // Format history for the model
-    // The model expects an array of { role: 'user' | 'model', parts: [{ text: ... }] } 
-    // Wait, the new @google/genai SDK format for contents:
-    const contents = (history || []).map(msg => ({
+    const { history, message } = await req.json();
+
+    if (!message) {
+      return new Response(JSON.stringify({ error: 'Message is required' }), { status: 400 });
+    }
+
+    const contents = (history || []).map((msg: any) => ({
       role: msg.role === 'model' ? 'model' : 'user',
       parts: [{ text: msg.text }]
     }));
 
-    // Add the current message
     contents.push({
       role: 'user',
       parts: [{ text: message }]
@@ -58,23 +56,41 @@ export default async function handler(req, res) {
       }
     });
 
-    for await (const chunk of responseStream) {
-      if (chunk.text) {
-        // SSE format: data: JSON_STRING\n\n
-        res.write(`data: ${JSON.stringify({ text: chunk.text })}\n\n`);
+    const stream = new ReadableStream({
+      async start(controller) {
+        try {
+          for await (const chunk of responseStream) {
+            if (chunk.text) {
+              const data = `data: ${JSON.stringify({ text: chunk.text })}\n\n`;
+              controller.enqueue(new TextEncoder().encode(data));
+            }
+          }
+          controller.enqueue(new TextEncoder().encode('data: [DONE]\n\n'));
+          controller.close();
+        } catch (e: any) {
+          console.error("Stream generation error:", e);
+          const errorMsg = `data: ${JSON.stringify({ error: e.message || "Failed to generate AI response" })}\n\n`;
+          controller.enqueue(new TextEncoder().encode(errorMsg));
+          controller.close();
+        }
       }
-    }
+    });
 
-    res.write('data: [DONE]\n\n');
-    res.end();
-  } catch (error) {
+    return new Response(stream, {
+      headers: {
+        'Content-Type': 'text/event-stream',
+        'Cache-Control': 'no-cache',
+        'Connection': 'keep-alive',
+      },
+    });
+
+  } catch (error: any) {
     console.error('Chat API Error:', error);
-    // Send error chunk if headers are already sent, else send 500
-    if (!res.headersSent) {
-      return res.status(500).json({ error: 'Internal Server Error' });
-    } else {
-      res.write(`data: ${JSON.stringify({ error: 'Internal Server Error' })}\n\n`);
-      res.end();
-    }
+    return new Response(JSON.stringify({ 
+      error: error.message || 'Internal Server Error Check Vercel Logs' 
+    }), {
+      status: 500,
+      headers: { 'Content-Type': 'application/json' },
+    });
   }
 }
