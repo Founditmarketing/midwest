@@ -57,8 +57,8 @@ export default function SignatureProjects() {
                 initial={{ clipPath: 'inset(0 100% 0 0)' }}
                 whileInView={{ clipPath: 'inset(0 0% 0 0)' }}
                 viewport={{ once: true, margin: "-100px" }}
-                transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
-                className="w-full md:w-7/12 relative group overflow-hidden shadow-2xl"
+                transition={{ duration: 2.4, ease: [0.16, 1, 0.3, 1] }}
+                className="w-full md:w-7/12 relative z-0 group overflow-hidden shadow-2xl"
               >
                 <div className="aspect-[4/3] sm:aspect-[4/5] md:aspect-[3/4] overflow-hidden">
                   <img
@@ -71,7 +71,7 @@ export default function SignatureProjects() {
                 <div className="absolute inset-0 bg-industrial-charcoal-dark/20 group-hover:bg-transparent transition-colors duration-700"></div>
               </motion.div>
               
-              <div className={`w-[90%] md:w-5/12 mx-auto flex flex-col justify-center bg-white/5 backdrop-blur-3xl border border-white/10 p-8 sm:p-10 md:p-14 lg:p-16 relative z-10 shadow-2xl ${index % 2 === 1 ? 'md:-mr-24' : 'md:-ml-24'} -mt-12 md:mt-0`}>
+              <div className={`w-[90%] md:w-5/12 mx-auto flex flex-col justify-center bg-white/5 backdrop-blur-3xl border border-white/10 p-8 sm:p-10 md:p-14 lg:p-16 relative z-20 shadow-2xl ${index % 2 === 1 ? 'md:-mr-24' : 'md:-ml-24'} -mt-12 md:mt-0`}>
                 <span className="font-sans text-[8px] md:text-[10px] tracking-[0.2em] md:tracking-[0.3em] uppercase text-gold-gradient mb-4 md:mb-6 font-semibold">{project.location}</span>
                 <h4 className="font-serif text-3xl md:text-4xl lg:text-5xl text-white mb-6 md:mb-8 font-light tracking-tight">{project.title}</h4>
                 <p className="font-sans text-xs md:text-sm text-gray-400 leading-[1.8] md:leading-loose font-light mb-6 md:mb-8">
