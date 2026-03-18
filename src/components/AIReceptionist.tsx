@@ -3,7 +3,7 @@ import { GoogleGenAI } from '@google/genai';
 import { MessageSquare, X, Send, Loader2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || 'MISSING_API_KEY' });
 
 const SYSTEM_INSTRUCTION = `You are the Executive Assistant to the Founder of Midwest Windmill. Your goal is to qualify leads. 
 1. If an inquiry mentions "Resort", "Wedding", or "Famous", immediately flag this as Priority 1 and trigger a personal calendar link. Say explicitly: "Your project aligns perfectly with our elite commissions. I have authorized a Priority 1 private consultation suite with our principal engineer. Please select a time here: https://calendly.com/midwest-windmill/vip-consultation"

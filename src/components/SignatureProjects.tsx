@@ -7,21 +7,21 @@ const projects = [
     title: 'The Grand Resort',
     location: 'Aspen, Colorado',
     description: 'A 60-foot heritage installation serving as the centerpiece for a world-class mountain resort.',
-    image: 'https://images.unsplash.com/photo-1518780664697-55e3ad937233?q=80&w=2065&auto=format&fit=crop'
+    image: 'https://midwestwindmillcompany.com/wp-content/uploads/2022/12/IMG-3794-scaled.jpg'
   },
   {
     id: 2,
     title: 'The Vanderbilt Estate',
     location: 'Newport, Rhode Island',
     description: 'Bespoke aeration innovation seamlessly integrated into a historic 19th-century landscape.',
-    image: 'https://images.unsplash.com/photo-1541888087525-2bf54dea9b72?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://midwestwindmillcompany.com/wp-content/uploads/2022/10/MidwestWindmill01.jpg'
   },
   {
     id: 3,
     title: 'The Willow Wedding Venue',
     location: 'Napa Valley, California',
     description: 'A picturesque landmark providing the perfect backdrop for exclusive private events.',
-    image: 'https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070&auto=format&fit=crop'
+    image: 'https://midwestwindmillcompany.com/wp-content/uploads/2024/10/image000000.jpeg'
   }
 ];
 

@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <div 
           className="w-full h-full bg-cover bg-center bg-fixed opacity-50"
-          style={{ backgroundImage: "url('https://images.unsplash.com/photo-1542332213-31f87348057f?q=80&w=2070&auto=format&fit=crop')" }}
+          style={{ backgroundImage: "url('https://midwestwindmillcompany.com/wp-content/uploads/2022/12/IMG-3793-scaled.jpg')" }}
         ></div>
         <div className="absolute inset-0 bg-gradient-to-b from-industrial-charcoal-dark/90 via-industrial-charcoal-dark/40 to-industrial-charcoal-dark"></div>
       </div>
