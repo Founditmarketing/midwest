@@ -12,8 +12,9 @@ export default function Footer() {
           </Link>
           
           <div className="flex space-x-8">
-            <Link to="/" className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400 hover:text-heritage-gold transition-colors font-light">Portfolio</Link>
-            <Link to="/" className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400 hover:text-heritage-gold transition-colors font-light">Engineering</Link>
+            <Link to="/portfolio" className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400 hover:text-heritage-gold transition-colors font-light">Portfolio</Link>
+            <Link to="/services" className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400 hover:text-heritage-gold transition-colors font-light">Services</Link>
+            <Link to="/about" className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400 hover:text-heritage-gold transition-colors font-light">The Firm</Link>
             <Link to="/consultation" className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400 hover:text-heritage-gold transition-colors font-light">Consultations</Link>
           </div>
         </div>

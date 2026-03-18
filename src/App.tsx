@@ -11,6 +11,9 @@ import AIReceptionist from './components/AIReceptionist';
 import Home from './pages/Home';
 import Consultation from './pages/Consultation';
 import LegacyParts from './pages/LegacyParts';
+import Portfolio from './pages/Portfolio';
+import Services from './pages/Services';
+import About from './pages/About';
 
 export default function App() {
   return (
@@ -19,6 +22,9 @@ export default function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/about" element={<About />} />
           <Route path="/consultation" element={<Consultation />} />
           <Route path="/legacy-parts" element={<LegacyParts />} />
         </Routes>
