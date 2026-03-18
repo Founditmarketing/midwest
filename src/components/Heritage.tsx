@@ -8,7 +8,7 @@ export default function Heritage() {
         <div className="absolute inset-0 bg-industrial-charcoal-dark/95 z-10 mix-blend-multiply"></div>
         <div 
           className="w-full h-full bg-cover bg-center opacity-20 grayscale"
-          style={{ backgroundImage: "url('/images/heritage_craftsman.png')" }}
+          style={{ backgroundImage: "url('/images/realistic_barn_windmill.png')" }}
         ></div>
       </div>
 
@@ -23,7 +23,7 @@ export default function Heritage() {
           >
             <div className="relative aspect-[4/5] overflow-hidden shadow-2xl">
               <img 
-                src="/images/heritage_craftsman.png" 
+                src="/images/realistic_barn_windmill.png" 
                 alt="Master craftsman restoring a heritage windmill" 
                 className="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105"
               />
