@@ -1,113 +1,67 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-
-const projects = [
-  {
-    id: 1,
-    title: 'The Grand Resort',
-    location: 'Aspen, Colorado',
-    description: 'A 60-foot heritage installation serving as the centerpiece for a world-class mountain resort.',
-    category: 'Commercial Hospitality',
-    image: '/images/luxury-resort-windmill.png'
-  },
-  {
-    id: 2,
-    title: 'The Vanderbilt Estate',
-    location: 'Newport, Rhode Island',
-    description: 'Bespoke aeration innovation seamlessly integrated into a historic 19th-century landscape.',
-    category: 'Private Estate',
-    image: '/images/vanderbilt-estate-windmill.png'
-  },
-  {
-    id: 3,
-    title: 'The Willow Wedding Venue',
-    location: 'Napa Valley, California',
-    description: 'A picturesque landmark providing the perfect backdrop for exclusive private events.',
-    category: 'Luxury Venue',
-    image: '/images/willow-wedding-venue.png'
-  },
-  {
-    id: 4,
-    title: 'Heritage Wind Power Farm',
-    location: 'Great Plains, Nebraska',
-    description: 'A massive multi-tower installation restoring classic American steel to an expansive family ranch property.',
-    category: 'Agricultural Estate',
-    image: '/images/midwest-windmill-installation.png'
-  },
-  {
-    id: 5,
-    title: 'Lake Buena Vista Aeration',
-    location: 'Orlando, Florida',
-    description: 'Functional 35-foot galvanized steel windmill providing sub-surface aeration to a large commercial pond system.',
-    category: 'Commercial Aeration',
-    image: '/images/lake-aeration-system.png'
-  },
-  {
-    id: 6,
-    title: 'Historic Barn Restoration',
-    location: 'Lancaster, Pennsylvania',
-    description: 'Authentic Aermotor windmill restoration complementing a 200-year-old stone and timber barn property.',
-    category: 'Heritage Restoration',
-    image: '/images/restored-heritage-windmill.png'
-  }
-];
+import { ArrowLeft } from 'lucide-react';
 
 export default function Portfolio() {
+  useEffect(() => {
+    document.title = "Historic Gallery | Midwest Windmill Company";
+  }, []);
+
+  // Generate an array of 18 image paths based on the download script
+  const galleryImages = Array.from({ length: 18 }, (_, i) => `/images/gallery/gallery-${i + 1}.jpg`);
+
   return (
-    <main className="pt-32 pb-40 bg-industrial-charcoal min-h-screen">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="text-center max-w-3xl mx-auto mb-32">
+    <main className="pt-24 md:pt-32 pb-40 bg-industrial-charcoal min-h-screen">
+      <div className="max-w-[90rem] mx-auto px-6 md:px-8">
+        
+        <Link to="/" className="inline-flex items-center text-gold-gradient hover:text-white transition-colors uppercase tracking-[0.2em] text-[10px] sm:text-xs mb-12 sm:mb-20 group font-semibold">
+          <ArrowLeft className="w-4 h-4 mr-3 transition-transform group-hover:-translate-x-2" />
+          Back to Workshop
+        </Link>
+
+        <div className="max-w-3xl mb-16 md:mb-24">
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            className="font-serif text-5xl md:text-7xl text-white font-light tracking-tight mb-8"
+            className="font-serif text-5xl md:text-7xl lg:text-[6rem] leading-[1.1] text-white font-light tracking-tight mb-8"
           >
-            Signature <span className="italic text-gray-400">Portfolio</span>
+            Historic <br className="hidden md:block" />
+            <span className="italic text-gray-400">Gallery</span>
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="font-sans text-lg text-gray-400 font-light leading-relaxed"
+            className="font-sans text-sm md:text-base text-gray-400 leading-relaxed font-light max-w-2xl"
           >
-            We accept a limited number of commissions each year to ensure uncompromising quality across our heritage installations, restorations, and commercial aeration projects.
+            A curated collection of our heritage restorations, towering estate landmarks, and functional agricultural icons from across the nation over the last decade.
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
-          {projects.map((project, index) => (
-            <motion.div 
-              key={project.id}
-              initial={{ opacity: 0, y: 30 }}
+        {/* CSS Columns Masonry Grid Layout */}
+        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4 sm:gap-6 space-y-4 sm:space-y-6">
+          {galleryImages.map((src, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-              className="group cursor-pointer"
+              viewport={{ once: true, margin: "50px" }}
+              transition={{ duration: 0.8, delay: (index % 6) * 0.1, ease: "easeOut" }}
+              className="relative group overflow-hidden break-inside-avoid shadow-xl bg-industrial-charcoal-dark cursor-pointer rounded-sm"
             >
-              <div className="aspect-[3/4] overflow-hidden mb-6 bg-black relative">
-                <div className="absolute inset-0 bg-industrial-charcoal-dark/20 group-hover:bg-transparent transition-colors duration-700 z-10 w-full h-full"></div>
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105 opacity-90 group-hover:opacity-100 grayscale-[30%] group-hover:grayscale-0"
-                />
-              </div>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center border-b border-white/10 pb-4">
-                  <span className="font-sans text-[9px] tracking-[0.3em] uppercase text-gold-gradient font-semibold">{project.location}</span>
-                  <span className="font-sans text-[8px] tracking-widest text-gray-500 uppercase">{project.category}</span>
-                </div>
-                <h3 className="font-serif text-3xl text-white font-light tracking-wide">{project.title}</h3>
-                <p className="font-sans text-sm text-gray-400 leading-relaxed font-light">{project.description}</p>
-                <Link to="/consultation" className="inline-block mt-4 text-[10px] tracking-[0.2em] uppercase text-heritage-gold hover:text-white transition-colors group-hover:translate-x-2 duration-300">
-                  Request Similar Project →
-                </Link>
-              </div>
+              <img 
+                src={src} 
+                alt={`Heritage Windmill Installation ${index + 1}`}
+                className="w-full h-auto object-cover opacity-90 transition-all duration-700 ease-out group-hover:scale-[1.03] group-hover:opacity-100 filter grayscale-[20%] group-hover:grayscale-0"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500"></div>
             </motion.div>
           ))}
         </div>
+        
       </div>
     </main>
   );
