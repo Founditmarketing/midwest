@@ -56,7 +56,7 @@ export default function Heritage() {
             
             <div className="space-y-6 md:space-y-8">
               <p className="font-sans text-gray-300 leading-[2] md:leading-loose font-light text-xs md:text-base">
-                At Midwest Windmill Company, we’re passionate about farm windmills. Our team has preserved and saved thousands of windmills all over the United States, becoming the most trusted name for bespoke heritage engineering.
+                At Midwest Windmill Company, we’re passionate about farm windmills. Our team has preserved and saved thousands of windmills all over the United States, becoming the most trusted name in the windmill industry.
               </p>
               <p className="font-sans text-sm md:text-base text-gray-400 font-light leading-relaxed">
                 There is absolutely no substitute for American-made quality. While others rely on imported, mass-produced parts, we incorporate peerless craftsmanship into every windmill and tower we touch. Built right in the heart of the Midwest, our structures offer historically proven durability, designed not just to function, but to endure.
