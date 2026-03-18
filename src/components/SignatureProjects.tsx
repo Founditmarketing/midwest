@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const projects = [
   {
     id: 1,
-    title: 'Northern Lights Installation',
-    location: 'Location Undisclosed',
-    description: 'A monument to American steel standing resolutely beneath the Aurora Borealis, engineered to withstand extreme sub-zero conditions.',
-    image: '/images/northern-lights.heic'
+    title: 'Winter Windmill',
+    location: 'Kirksville, Missouri',
+    description: 'A genuine heritage installation standing resilient against the harsh Midwestern winter, providing reliable sub-surface aeration year-round.',
+    image: '/images/kirksville.heic'
   },
   {
     id: 2,
