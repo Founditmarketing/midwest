@@ -13,7 +13,7 @@ import Consultation from './pages/Consultation';
 import LegacyParts from './pages/LegacyParts';
 import Portfolio from './pages/Portfolio';
 import Services from './pages/Services';
-import About from './pages/About';
+import Craftsman from './pages/Craftsman';
 
 export default function App() {
   return (
@@ -24,7 +24,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/craftsman" element={<Craftsman />} />
           <Route path="/consultation" element={<Consultation />} />
           <Route path="/legacy-parts" element={<LegacyParts />} />
         </Routes>
