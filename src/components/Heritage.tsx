@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 export default function Heritage() {
   return (
-    <section id="engineering" className="py-48 bg-industrial-charcoal relative overflow-hidden">
+    <section id="history" className="py-32 md:py-40 bg-industrial-charcoal relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-industrial-charcoal-dark/95 z-10 mix-blend-multiply"></div>
         <div 
@@ -28,9 +28,6 @@ export default function Heritage() {
                 className="w-full h-full object-cover transition-transform duration-[2s] hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-industrial-charcoal-dark/80 via-transparent to-transparent"></div>
-              <div className="absolute bottom-10 left-10">
-                 <span className="font-sans text-[10px] tracking-[0.3em] uppercase text-gold-gradient font-semibold">American Made</span>
-              </div>
             </div>
           </motion.div>
 

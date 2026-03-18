@@ -31,9 +31,9 @@ export default function Navbar() {
         </Link>
         
         <div className="hidden md:flex items-center space-x-12">
-          <Link to={isHome ? "#portfolio" : "/"} className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-300 hover:text-heritage-gold transition-colors duration-300 font-light">Portfolio</Link>
-          <Link to={isHome ? "#engineering" : "/"} className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-300 hover:text-heritage-gold transition-colors duration-300 font-light">Heritage</Link>
-          <Link to={isHome ? "#aeration" : "/"} className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-300 hover:text-heritage-gold transition-colors duration-300 font-light">Innovation</Link>
+          <Link to={isHome ? "#history" : "/"} className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-300 hover:text-heritage-gold transition-colors duration-300 font-light">Our History</Link>
+          <Link to={isHome ? "#portfolio" : "/"} className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-300 hover:text-heritage-gold transition-colors duration-300 font-light">Signature Projects</Link>
+          <Link to={isHome ? "#engineering" : "/"} className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-300 hover:text-heritage-gold transition-colors duration-300 font-light">Heritage Engineering</Link>
           <Link to="/consultation" className="font-sans text-[10px] tracking-[0.2em] uppercase text-heritage-gold hover:text-industrial-charcoal-dark hover:bg-heritage-gold transition-all duration-300 border border-heritage-gold/30 px-6 py-2.5 rounded-sm font-light">Private Consultations</Link>
         </div>
       </div>

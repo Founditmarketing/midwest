@@ -4,7 +4,7 @@ import { Wind, Droplets, ShieldCheck } from 'lucide-react';
 
 export default function AerationInnovation() {
   return (
-    <section id="aeration" className="py-32 bg-industrial-charcoal relative overflow-hidden">
+    <section id="engineering" className="py-24 md:py-32 bg-industrial-charcoal relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <motion.div

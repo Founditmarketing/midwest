@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Heritage from '../components/Heritage';
 import SignatureProjects from '../components/SignatureProjects';
 import AerationInnovation from '../components/AerationInnovation';
+import Testimonials from '../components/Testimonials';
 import InvestmentProcess from '../components/InvestmentProcess';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Heritage />
       <SignatureProjects />
       <AerationInnovation />
+      <Testimonials />
       <InvestmentProcess />
     </main>
   );

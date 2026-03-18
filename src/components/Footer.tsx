@@ -18,6 +18,25 @@ export default function Footer() {
           </div>
         </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16 font-sans font-light">
+          <div>
+            <div className="text-[10px] tracking-widest uppercase text-gray-500 mb-2">Location</div>
+            <div className="text-sm text-gray-300">22275 Youngstown Trail<br/>Kirksville, MO 63501</div>
+          </div>
+          <div>
+             <div className="text-[10px] tracking-widest uppercase text-gray-500 mb-2">Contact</div>
+             <div className="text-sm text-gray-300"><a href="tel:6603418951" className="hover:text-heritage-gold transition-colors">660-341-8951</a><br /><a href="mailto:markhenry@midwestwindmillcompany.com" className="hover:text-heritage-gold transition-colors">markhenry@midwestwindmillcompany.com</a></div>
+          </div>
+          <div>
+            <div className="text-[10px] tracking-widest uppercase text-gray-500 mb-2">Hours</div>
+            <div className="text-sm text-gray-300">Mon-Sat: 7 AM - 7 PM<br/>Sunday: Closed</div>
+          </div>
+          <div>
+             <div className="text-[10px] tracking-widest uppercase text-gray-500 mb-2">Service Area</div>
+             <div className="text-sm text-gray-300">Proudly serving the entire United States via our heritage engineering network.</div>
+          </div>
+        </div>
+
         <div className="w-full h-[1px] bg-white/5 mb-16"></div>
 
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">

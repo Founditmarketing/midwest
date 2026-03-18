@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -10,7 +11,7 @@ export default function Hero() {
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
           className="w-full h-full bg-cover bg-center bg-fixed opacity-50"
-          style={{ backgroundImage: "url('https://midwestwindmillcompany.com/wp-content/uploads/2022/12/IMG-3793-scaled.jpg')" }}
+          style={{ backgroundImage: "url('/images/hero_farm_windmill.png')" }}
         ></motion.div>
         <div className="absolute inset-0 bg-gradient-to-b from-industrial-charcoal-dark/90 via-industrial-charcoal-dark/40 to-industrial-charcoal-dark"></div>
       </div>
@@ -44,18 +45,21 @@ export default function Hero() {
         >
           Midwest Windmill is the nation's premier expert in heritage wind-power engineering. From private estates to world-class resorts, we provide the innovation and safety technology required for the world's most picturesque moments.
         </motion.p>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.5, delay: 1.0 }}
+          className="mt-12"
+        >
+          <Link 
+            to="/consultation"
+            className="inline-flex items-center justify-center px-12 py-5 border border-heritage-gold/50 text-heritage-gold hover:bg-heritage-gold hover:text-industrial-charcoal-dark transition-all duration-500 font-sans text-[10px] tracking-[0.3em] uppercase group"
+          >
+            Request a Consultation
+            <span className="ml-4 group-hover:translate-x-2 transition-transform duration-300">→</span>
+          </Link>
+        </motion.div>
       </div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 2, delay: 1.5 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center space-y-6"
-      >
-        <div className="w-[1px] h-24 bg-gradient-to-b from-heritage-gold/50 to-transparent"></div>
-        <span className="font-sans text-[9px] tracking-[0.3em] uppercase text-gray-500 font-light">Discover</span>
-      </motion.div>
     </section>
   );
 }
