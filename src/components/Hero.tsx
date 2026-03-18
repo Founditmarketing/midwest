@@ -47,7 +47,7 @@ export default function Hero() {
           transition={{ duration: 1.5, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans text-xs md:text-base text-gray-400 max-w-2xl px-4 md:px-0 leading-[2] md:leading-loose font-light tracking-wide lg:tracking-wider mb-8 md:mb-0"
         >
-          At Midwest Windmill Company, we're passionate about farm windmills! Our company has saved thousands of windmills all over the United States! Become one of the thousands of satisfied customers across our great country that have experienced working with the best! We are the most trusted name for all your windmill needs. Established in 2012, family owned and operated! Our farm windmills are calibrated using time-tested mathematical methods, proven to last for decades with proper maintenance. You can pump water for your home, fill ponds, aerate ponds, water whole orchards, and water livestock. We know the importance of your water supply and that is why we use quality windmills that are built to last, built right in the heart of the Midwest. We strive to ensure the best quality control on products and services!
+          Midwest Windmill is the nation's premier expert in heritage wind-power engineering. From private estates to world-class resorts, we provide the innovation and safety technology required for the world's most picturesque moments.
         </motion.p>
         
         <motion.div
