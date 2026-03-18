@@ -5,17 +5,17 @@ import { Link } from 'react-router-dom';
 const projects = [
   {
     id: 1,
-    title: 'The Grand Resort',
-    location: 'Aspen, Colorado',
-    description: 'A 60-foot heritage installation serving as the centerpiece for a world-class mountain resort.',
-    image: '/images/luxury-resort-windmill.png'
+    title: 'Northern Lights Installation',
+    location: 'Location Undisclosed',
+    description: 'A monument to American steel standing resolutely beneath the Aurora Borealis, engineered to withstand extreme sub-zero conditions.',
+    image: '/images/northern-lights.heic'
   },
   {
     id: 2,
-    title: 'Private Equestrian Ranch',
-    location: 'Austin, Texas',
-    description: 'A functioning heritage landmark providing sub-surface aeration for a sprawling 5-acre private equestrian lake.',
-    image: '/images/texas-equestrian-ranch.png'
+    title: 'Kansas Homestead',
+    location: 'Kansas',
+    description: 'A functioning heritage landmark providing sub-surface aeration and timeless aesthetic value to an expansive Midwestern homestead.',
+    image: '/images/kansas.jpg'
   },
   {
     id: 3,
