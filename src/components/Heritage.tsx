@@ -29,7 +29,7 @@ export default function Heritage() {
             <div className="relative aspect-[4/5] overflow-hidden shadow-2xl group">
               <motion.img 
                 style={{ y: imgY }}
-                src="/images/master-craftsman-restoration.png" 
+                src="/images/mark-lookalike-craftsman.png" 
                 alt="Master craftsman restoring a heritage windmill" 
                 className="w-full h-[120%] object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-[2s] ease-out group-hover:scale-105"
               />
