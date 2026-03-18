@@ -30,7 +30,7 @@ const services = [
     icon: <PackageSearch size={20} className="text-heritage-gold" strokeWidth={1.5} />,
     title: 'Replacement Parts Logistics',
     desc: 'Beyond full-scale installations, we act as the premier supplier for rare and standard Aermotor replacement parts. We ship high-grade American steel components directly to your site, bypassing cheap imports to guarantee decade-spanning durability.',
-    image: '/images/windmill_parts_logistics.png'
+    image: '/images/realistic_replacement_parts.png'
   }
 ];
 
