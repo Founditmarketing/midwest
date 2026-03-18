@@ -1,18 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { GoogleGenAI } from '@google/genai';
 import { MessageSquare, X, Send, Loader2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || 'MISSING_API_KEY' });
-
-const SYSTEM_INSTRUCTION = `You are the Executive Assistant to the Founder of Midwest Windmill. Your goal is to qualify leads. 
-1. If an inquiry mentions "Resort", "Wedding", or "Famous", immediately flag this as Priority 1 and trigger a personal calendar link. Say explicitly: "Your project aligns perfectly with our elite commissions. I have authorized a Priority 1 private consultation suite with our principal engineer. Please select a time here: https://calendly.com/midwest-windmill/vip-consultation"
-2. ALL other inquiries (even if they mention new installations but don't meet the Priority 1 threshold, or are asking for parts, general information, or any other query) get an automated "Resource Guide" PDF and are filtered to a low-priority bucket. Say: "We are currently allocating our engineering resources exclusively to top-tier commercial and heritage estate commissions. For your inquiry, please review our comprehensive resources here: [Download Midwest Windmill Resource Guide](/resource-guide.pdf). If you require legacy parts or DIY support, visit our portal at /legacy-parts."
-3. Maintain an air of 'exclusive availability.' We are not a shop; we are a specialized service.
-Act as a High-End Concierge for Midwest Windmill, a premier heritage engineering firm. Our clients are luxury estate owners, famous individuals, and world-class resorts.
-Your Tone: Professional, exclusive, authoritative, and fiercely protective of the owner's time.
-The 'Midwest' Pitch: Emphasize that we 'preserve the past and power the future' using modern safety tech and innovation that 'Great Plains' simply doesn't offer.
-Constraint: Never give pricing for custom installs. Never book calls for anything that isn't Priority 1. Always redirect low-priority to the Resource Guide.`;
 
 interface Message {
   id: string;
@@ -28,18 +16,6 @@ export default function AIReceptionist() {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
-  const chatRef = useRef<any>(null);
-
-  useEffect(() => {
-    if (!chatRef.current) {
-      chatRef.current = ai.chats.create({
-        model: 'gemini-3-flash-preview',
-        config: {
-          systemInstruction: SYSTEM_INSTRUCTION,
-        }
-      });
-    }
-  }, []);
 
   useEffect(() => {
     if (messagesEndRef.current) {
@@ -51,26 +27,69 @@ export default function AIReceptionist() {
     if (!input.trim() || isLoading) return;
 
     const userMessage: Message = { id: Date.now().toString(), role: 'user', text: input };
+    const messagesHistory = [...messages.slice(1)]; // Skip the first greeting message
+    
     setMessages(prev => [...prev, userMessage]);
     setInput('');
     setIsLoading(true);
 
     try {
-      const responseStream = await chatRef.current.sendMessageStream({ message: userMessage.text });
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ 
+          message: userMessage.text,
+          history: messagesHistory 
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
+      }
+
+      if (!response.body) throw new Error("No response body");
+
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder('utf-8');
+      
+      const modelMessageId = (Date.now() + 1).toString();
+      setMessages(prev => [...prev, { id: modelMessageId, role: 'model', text: '' }]);
       
       let fullResponse = '';
-      const modelMessageId = (Date.now() + 1).toString();
-      
-      setMessages(prev => [...prev, { id: modelMessageId, role: 'model', text: '' }]);
+      let done = false;
 
-      for await (const chunk of responseStream) {
-        fullResponse += chunk.text;
-        setMessages(prev => prev.map(msg => 
-          msg.id === modelMessageId ? { ...msg, text: fullResponse } : msg
-        ));
+      while (!done) {
+        const { value, done: readerDone } = await reader.read();
+        done = readerDone;
+        if (value) {
+          const chunkString = decoder.decode(value, { stream: true });
+          const lines = chunkString.split('\n');
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              const dataStr = line.replace('data: ', '').trim();
+              if (dataStr === '[DONE]') {
+                done = true;
+                break;
+              }
+              if (dataStr) {
+                try {
+                  const data = JSON.parse(dataStr);
+                  if (data.text) {
+                     fullResponse += data.text;
+                     setMessages(prev => prev.map(msg => 
+                       msg.id === modelMessageId ? { ...msg, text: fullResponse } : msg
+                     ));
+                  }
+                } catch (e) {
+                  console.error("Error parsing SSE data line:", e);
+                }
+              }
+            }
+          }
+        }
       }
     } catch (error) {
-      console.error("Error communicating with AI:", error);
+      console.error("Error communicating with backend API:", error);
       setMessages(prev => [...prev, { 
         id: Date.now().toString(), 
         role: 'model', 
