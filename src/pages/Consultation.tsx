@@ -166,7 +166,7 @@ export default function Consultation() {
                       className="w-full bg-black/50 border border-white/20 p-4 text-white focus:outline-none focus:border-heritage-gold transition-colors font-sans text-sm appearance-none"
                     >
                       <option value="" disabled>Select Tier...</option>
-                      <option value="$5k-$10k">$5,000 - $10,000</option>
+                      <option value="$7k-$10k">$7,000 - $10,000</option>
                       <option value="$10k-$20k">$10,000 - $20,000</option>
                       <option value="$20k+">$20,000+</option>
                     </select>
