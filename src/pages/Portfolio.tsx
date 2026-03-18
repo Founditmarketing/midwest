@@ -8,8 +8,9 @@ export default function Portfolio() {
     document.title = "Historic Gallery | Midwest Windmill Company";
   }, []);
 
-  // Generate an array of 18 image paths based on the download script
-  const galleryImages = Array.from({ length: 18 }, (_, i) => `/images/gallery/gallery-${i + 1}.jpg`);
+  // Map through the 16 remaining images after user removals
+  const validIndices = [1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18];
+  const galleryImages = validIndices.map(i => `/images/gallery/gallery-${i}.jpg`);
 
   return (
     <main className="pt-24 md:pt-32 pb-40 bg-industrial-charcoal min-h-screen">
