@@ -8,8 +8,8 @@ export default function Portfolio() {
     document.title = "Historic Gallery | Midwest Windmill Company";
   }, []);
 
-  // Map through the 16 remaining images after user removals
-  const validIndices = [1, 2, 3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18];
+  // Map through the 15 remaining images after user removals
+  const validIndices = [1, 2, 3, 4, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18];
   const galleryImages = validIndices.map(i => `/images/gallery/gallery-${i}.jpg`);
 
   return (
