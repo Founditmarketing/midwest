@@ -8,17 +8,24 @@ const projects = [
     title: 'Winter Windmill',
     location: 'Kirksville, Missouri',
     description: 'A genuine heritage installation standing resilient against the harsh Midwestern winter, providing reliable sub-surface aeration year-round.',
-    image: '/images/kirksville.heic'
+    image: '/images/kirksville.jpeg'
   },
   {
     id: 2,
+    title: 'Northern Lights Installation',
+    location: 'Location Undisclosed',
+    description: 'A monument to American steel standing resolutely beneath the Aurora Borealis, engineered to withstand extreme sub-zero conditions.',
+    image: '/images/northern-lights.jpeg'
+  },
+  {
+    id: 3,
     title: 'Kansas Homestead',
     location: 'Kansas',
     description: 'A functioning heritage landmark providing sub-surface aeration and timeless aesthetic value to an expansive Midwestern homestead.',
     image: '/images/kansas.jpg'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Silver T Ranch',
     location: 'Texas',
     description: 'A monumental heritage installation standing proudly against the Texas skyline, embodying the enduring legacy of American steel.',

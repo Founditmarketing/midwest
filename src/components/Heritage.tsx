@@ -5,7 +5,7 @@ export default function Heritage() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
   const bgY = useTransform(scrollYProgress, [0, 1], ['0%', '30%']);
-  const imgY = useTransform(scrollYProgress, [0, 1], ['0%', '15%']);
+  const imgY = useTransform(scrollYProgress, [0, 1], ['0%', '-10%']);
 
   return (
     <section ref={ref} id="history" className="py-20 md:py-40 bg-industrial-charcoal relative overflow-hidden">
