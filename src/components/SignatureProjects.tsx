@@ -19,10 +19,10 @@ const projects = [
   },
   {
     id: 3,
-    title: 'The Willow Wedding Venue',
-    location: 'Napa Valley, California',
-    description: 'A picturesque landmark providing the perfect backdrop for exclusive private events.',
-    image: '/images/willow-wedding-venue.png'
+    title: 'Silver T Ranch',
+    location: 'Texas',
+    description: 'A monumental heritage installation standing proudly against the Texas skyline, embodying the enduring legacy of American steel.',
+    image: '/images/silver-t-ranch.png'
   }
 ];
 
