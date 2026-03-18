@@ -53,7 +53,13 @@ export default function SignatureProjects() {
               transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
               className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} items-center`}
             >
-              <div className="w-full md:w-7/12 relative group overflow-hidden shadow-2xl">
+              <motion.div 
+                initial={{ clipPath: 'inset(0 100% 0 0)' }}
+                whileInView={{ clipPath: 'inset(0 0% 0 0)' }}
+                viewport={{ once: true, margin: "-100px" }}
+                transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
+                className="w-full md:w-7/12 relative group overflow-hidden shadow-2xl"
+              >
                 <div className="aspect-[4/3] sm:aspect-[4/5] md:aspect-[3/4] overflow-hidden">
                   <img
                     src={project.image}
@@ -63,7 +69,7 @@ export default function SignatureProjects() {
                   />
                 </div>
                 <div className="absolute inset-0 bg-industrial-charcoal-dark/20 group-hover:bg-transparent transition-colors duration-700"></div>
-              </div>
+              </motion.div>
               
               <div className={`w-[90%] md:w-5/12 mx-auto flex flex-col justify-center bg-white/5 backdrop-blur-3xl border border-white/10 p-8 sm:p-10 md:p-14 lg:p-16 relative z-10 shadow-2xl ${index % 2 === 1 ? 'md:-mr-24' : 'md:-ml-24'} -mt-12 md:mt-0`}>
                 <span className="font-sans text-[8px] md:text-[10px] tracking-[0.2em] md:tracking-[0.3em] uppercase text-gold-gradient mb-4 md:mb-6 font-semibold">{project.location}</span>
@@ -72,7 +78,13 @@ export default function SignatureProjects() {
                   {project.description}
                 </p>
                 <div className="flex items-center space-x-4 md:space-x-6">
-                  <div className="w-12 md:w-16 h-[1px] bg-heritage-gold/50"></div>
+                  <motion.div 
+                    initial={{ width: 0 }}
+                    whileInView={{ width: "4rem" }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                    className="h-[1px] bg-heritage-gold/50"
+                  ></motion.div>
                   <Link to="/consultation" className="text-heritage-gold uppercase text-[9px] md:text-[10px] tracking-[0.2em] hover:text-white transition-colors">
                     View Project
                   </Link>

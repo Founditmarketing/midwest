@@ -23,18 +23,18 @@ export default function Hero() {
     {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-8 text-center flex flex-col items-center mt-20 md:mt-32">
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
+          initial={{ opacity: 0, y: 20, filter: 'blur(10px)' }}
+          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          transition={{ duration: 1.5, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="font-sans text-[9px] md:text-xs tracking-[0.3em] md:tracking-[0.5em] uppercase text-gold-gradient mb-8 md:mb-12 font-semibold"
         >
           Preserving the past. Powering the future.
         </motion.p>
 
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1.2, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
+          initial={{ opacity: 0, y: 30, filter: 'blur(20px)' }}
+          animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+          transition={{ duration: 1.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="font-serif text-5xl sm:text-6xl md:text-8xl lg:text-[7rem] text-white leading-[1.1] md:leading-[0.9] mb-10 md:mb-20 max-w-5xl font-light tracking-tight px-2"
         >
           We don't just install windmills.<br className="hidden md:block" />

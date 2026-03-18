@@ -62,10 +62,10 @@ export default function AerationInnovation() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1.2 }}
+            initial={{ clipPath: 'inset(100% 0 0 0)', scale: 1.1 }}
+            whileInView={{ clipPath: 'inset(0% 0 0 0)', scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
             className="relative h-[600px] md:h-[800px] rounded-sm overflow-hidden mt-8 lg:mt-0"
           >
             <div className="absolute inset-0 bg-black/20 z-10 mix-blend-multiply"></div>
