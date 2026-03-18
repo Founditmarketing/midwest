@@ -17,7 +17,7 @@ export default function Craftsman() {
             <img 
                src="/images/mark_henry.jpeg" 
                alt="Mark Henry - Founder of Midwest Windmill Company" 
-               className="w-full h-full object-cover grayscale-[20%]"
+               className="w-full h-full object-cover object-[center_80%] grayscale-[20%]"
             />
             <div className="absolute inset-0 bg-industrial-charcoal-dark/20"></div>
           </motion.div>
