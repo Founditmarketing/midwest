@@ -51,7 +51,7 @@ export default async function handler(req, res) {
     });
 
     const responseStream = await ai.models.generateContentStream({
-      model: 'gemini-3-flash-preview',
+      model: 'gemini-2.5-flash',
       contents: contents,
       config: {
         systemInstruction: SYSTEM_INSTRUCTION,
