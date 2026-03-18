@@ -15,17 +15,17 @@ export default function AerationInnovation() {
             className="space-y-12"
           >
             <div>
-              <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-heritage-gold block mb-6 font-light">
-                Aeration Innovation
+              <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-gold-gradient block mb-6 font-semibold">
+                Heritage Engineering
               </span>
-              <h2 className="font-serif text-5xl md:text-6xl text-white leading-tight font-light">
-                Powering the Future of <br />
-                <span className="italic text-gray-400">Water Management</span>
+              <h2 className="font-serif text-5xl md:text-6xl text-white leading-tight font-light tracking-tight">
+                Built to Last.<br />
+                <span className="italic text-gray-400">Proven for Decades.</span>
               </h2>
             </div>
             
-            <p className="font-sans text-gray-400 leading-relaxed font-light text-lg">
-              Beyond their striking silhouette, our windmills are engineered for high-performance sub-surface aeration. We utilize wind power to deliver oxygen to the deepest parts of your lake or pond, preventing stagnation and promoting a thriving aquatic ecosystem.
+            <p className="font-sans text-gray-300 leading-loose font-light text-sm md:text-base">
+              Our windmills are not merely aesthetic; they are calibrated using time-tested mathematical methods. From pumping water for private estates to deeply aerating expansive commercial ponds, we provide the innovation required to secure your water supply.
             </p>
 
             <div className="space-y-8 pt-8 border-t border-white/10">
@@ -34,8 +34,8 @@ export default function AerationInnovation() {
                   <Wind className="text-heritage-gold" size={24} strokeWidth={1.5} />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl text-white mb-2 font-light">Zero-Carbon Operation</h4>
-                  <p className="font-sans text-sm text-gray-400 font-light leading-relaxed">Harnessing natural wind energy to power our proprietary BalCam II compressors, eliminating electrical costs and environmental impact.</p>
+                  <h4 className="font-serif text-2xl text-white mb-2 font-light tracking-wide">Historical Aesthetics</h4>
+                  <p className="font-sans text-sm text-gray-400 font-light leading-relaxed">Elevate your landscape with a functioning landmark that honors the American frontier without sacrificing modern reliability.</p>
                 </div>
               </div>
 
@@ -44,8 +44,8 @@ export default function AerationInnovation() {
                   <Droplets className="text-heritage-gold" size={24} strokeWidth={1.5} />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl text-white mb-2 font-light">Deep Water Oxygenation</h4>
-                  <p className="font-sans text-sm text-gray-400 font-light leading-relaxed">Our systems push air to the bottom of the water column, breaking down thermoclines and preventing algae blooms and fish kills.</p>
+                  <h4 className="font-serif text-2xl text-white mb-2 font-light tracking-wide">Water Delivery & Aeration</h4>
+                  <p className="font-sans text-sm text-gray-400 font-light leading-relaxed">Engineered for sub-surface aeration to prevent algae blooms, or robust water pumping to fill ponds and water entire orchards.</p>
                 </div>
               </div>
 
@@ -54,8 +54,8 @@ export default function AerationInnovation() {
                   <ShieldCheck className="text-heritage-gold" size={24} strokeWidth={1.5} />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl text-white mb-2 font-light">Heritage Durability</h4>
-                  <p className="font-sans text-sm text-gray-400 font-light leading-relaxed">Built with heavy-gauge galvanized steel and backed by our legendary 5-year warranty on all compressor components.</p>
+                  <h4 className="font-serif text-2xl text-white mb-2 font-light tracking-wide">Generational Lifespan</h4>
+                  <p className="font-sans text-sm text-gray-400 font-light leading-relaxed">Constructed from heavy-gauge galvanized steel. When properly maintained, our bespoke windmills operate flawlessly for decades.</p>
                 </div>
               </div>
             </div>
