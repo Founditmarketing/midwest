@@ -28,7 +28,7 @@ const projects = [
     id: 4,
     title: 'Silver T Ranch',
     location: 'Texas',
-    description: 'A 16-foot windmill on a 40-foot tower sold and installed on this iconic Texas ranch — one of our largest complete systems.',
+    description: 'Silver T Ranch is a registered Longhorn ranch in Texas, and the windmill is an 8ft on a 27ft tower.',
     image: '/images/silver-t-ranch.png'
   }
 ];
