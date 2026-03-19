@@ -10,7 +10,10 @@ export default function Portfolio() {
 
   // Map through all 17 approved images, adding the two newest JPEG uploads
   const validIndices = [1, 2, 4, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 22, 23, 24];
-  const galleryImages = validIndices.map(i => `/images/gallery/gallery-${i}.jpg`);
+  const galleryImages = [
+    ...validIndices.map(i => `/images/gallery/gallery-${i}.jpg`),
+    '/IMG_3619.JPG'
+  ];
 
   return (
     <main className="pt-24 md:pt-32 pb-40 bg-industrial-charcoal min-h-screen">
