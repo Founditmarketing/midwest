@@ -14,7 +14,7 @@ const projects = [
     id: 2,
     title: 'Northern Lights Installation',
     location: 'Location Undisclosed',
-    description: 'A complete windmill system sold and shipped to withstand extreme sub-zero conditions — still pumping strong years later.',
+    description: 'Our service department reaches far beyond Missouri — proudly serving Michigan, Wisconsin, Minnesota, Illinois, Iowa, Nebraska, Kansas, and beyond with installation and service for these pumpers that have been working in warm and cold weather climates for 136 years and still pumping.',
     image: '/images/northern-lights.jpeg'
   },
   {
