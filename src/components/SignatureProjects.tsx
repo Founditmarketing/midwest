@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: 'Winter Windmill',
     location: 'Kirksville, Missouri',
-    description: 'An 8-foot windmill on a 33-foot tower, sold and installed for year-round sub-surface pond aeration in the harsh Midwestern winter.',
+    description: 'Looking for a custom work of art? We offer any size farm windmill wheel from 6ft to 16ft on Douglas fir Amish-built custom wooden towers.',
     image: '/images/kirksville.jpeg'
   },
   {
