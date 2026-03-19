@@ -15,6 +15,8 @@ export default function Consultation() {
     termsAccepted: false
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const isLegacyParts = formData.projectType === 'Replacement Parts';
 
@@ -25,9 +27,29 @@ export default function Consultation() {
   const nextStep = () => setStep(s => Math.min(s + 1, 3));
   const prevStep = () => setStep(s => Math.max(s - 1, 1));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    setIsSubmitting(true);
+    setSubmitError('');
+
+    try {
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error || 'Failed to send your request.');
+      }
+
+      setIsSubmitted(true);
+    } catch (err: any) {
+      setSubmitError(err.message || 'Something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -230,13 +252,19 @@ export default function Consultation() {
                 ) : (
                   <button 
                     type="submit"
-                    disabled={!formData.termsAccepted || !formData.investmentTier || !formData.machineryAccess || isLegacyParts}
+                    disabled={!formData.termsAccepted || !formData.investmentTier || !formData.machineryAccess || isLegacyParts || isSubmitting}
                     className="bg-gold-gradient text-industrial-charcoal-dark font-sans text-[10px] tracking-[0.3em] uppercase px-8 py-3 hover:brightness-110 disabled:opacity-50 disabled:hover:brightness-100 transition-all duration-300 font-semibold"
                   >
-                    Submit Request
+                    {isSubmitting ? 'Sending...' : 'Submit Request'}
                   </button>
                 )}
               </div>
+
+              {submitError && (
+                <div className="mt-6 bg-red-950/40 border border-red-900/50 p-4 text-center">
+                  <p className="font-sans text-sm text-red-200 font-light">{submitError}</p>
+                </div>
+              )}
             </motion.form>
           )}
         </AnimatePresence>

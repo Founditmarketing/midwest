@@ -7,7 +7,8 @@ const apiMockPlugin = () => ({
   name: 'api-mock-plugin',
   configureServer(server) {
     server.middlewares.use(async (req, res, next) => {
-      if (req.url === '/api/chat' && req.method === 'POST') {
+      const isApiRoute = req.url === '/api/chat' || req.url === '/api/send-email';
+      if (isApiRoute && req.method === 'POST') {
         // Parse JSON body like Vercel does automatically
         let body = '';
         req.on('data', chunk => {
@@ -21,26 +22,35 @@ const apiMockPlugin = () => ({
               json: async () => body ? JSON.parse(body) : {}
             } as any;
             
-            const handler = await server.ssrLoadModule('/api/chat.ts');
+            const modulePath = req.url === '/api/chat' ? '/api/chat.ts' : '/api/send-email.ts';
+            const handler = await server.ssrLoadModule(modulePath);
             const webRes = await handler.default(webReq);
 
             if (webRes && webRes.body) {
+               const contentType = webRes.headers.get('content-type') || '';
                res.writeHead(webRes.status || 200, Object.fromEntries(webRes.headers.entries()));
-               const reader = webRes.body.getReader();
-               const processStream = async () => {
-                 while (true) {
-                   const { done, value } = await reader.read();
-                   if (done) {
-                     res.end();
-                     break;
+               if (contentType.includes('text/event-stream')) {
+                 const reader = webRes.body.getReader();
+                 const processStream = async () => {
+                   while (true) {
+                     const { done, value } = await reader.read();
+                     if (done) {
+                       res.end();
+                       break;
+                     }
+                     res.write(value);
                    }
-                   res.write(value);
-                 }
-               };
-               processStream();
+                 };
+                 processStream();
+               } else {
+                 const text = await webRes.text();
+                 res.end(text);
+               }
             } else {
                res.statusCode = webRes?.status || 200;
-               res.end();
+               const text = webRes ? await webRes.text() : '';
+               res.setHeader('Content-Type', 'application/json');
+               res.end(text);
             }
           } catch (e: any) {
             console.error('API Error:', e);
@@ -58,6 +68,7 @@ const apiMockPlugin = () => ({
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   process.env.GEMINI_API_KEY = env.GEMINI_API_KEY || process.env.GEMINI_API_KEY;
+  process.env.RESEND_API_KEY = env.RESEND_API_KEY || process.env.RESEND_API_KEY;
 
   return {
     plugins: [react(), tailwindcss(), apiMockPlugin()],
