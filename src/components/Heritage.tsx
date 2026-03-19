@@ -29,7 +29,7 @@ export default function Heritage() {
             <div className="relative aspect-[4/5] overflow-hidden shadow-2xl group">
               <motion.img 
                 style={{ y: imgY }}
-                src="/images/mark_henry.jpeg" 
+                src="/IMG_3368.JPG" 
                 alt="Mark Henry - Founder & Master Craftsman" 
                 className="w-full h-[120%] object-cover object-[center_80%] grayscale-[30%] group-hover:grayscale-0 transition-all duration-[2s] ease-out group-hover:scale-105"
               />
