@@ -11,7 +11,7 @@ export default function Hero() {
       {/* Background Image with Parallax */}
       <div className="absolute inset-0 z-0">
         <motion.div 
-          style={{ y: yBg, backgroundImage: "url('/IMG_3368.JPG')" }}
+          style={{ y: yBg, backgroundImage: "url('/images/midwest-windmill-installation.png')" }}
           animate={{ scale: [1, 1.05, 1] }}
           transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
           className="w-full h-full bg-cover bg-center bg-fixed opacity-50"
