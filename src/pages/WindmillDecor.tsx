@@ -9,7 +9,7 @@ const decorProducts = [
     description: "Authentic half-wheel windmill fan, professionally finished and mounted as a stunning semicircular wall accent. Perfect above fireplaces, entryways, and dining areas.",
     image: '/images/windmill-wall-decor.png',
     sizes: "6' – 8'",
-    priceRange: '$2,000 – $4,500',
+    priceRange: '$660 – $1,200',
     category: 'Interior',
     icon: Home,
   },
@@ -18,7 +18,7 @@ const decorProducts = [
     description: "Complete windmill wheel, precision-balanced and wall-mounted as a dramatic centerpiece. An unforgettable statement in wedding venues, restaurants, and luxury residences.",
     image: '/images/windmill-decor-wedding-venue.png',
     sizes: "6' – 16'",
-    priceRange: '$3,500 – $11,000',
+    priceRange: '$1,300 – $11,000',
     category: 'Interior / Exterior',
     icon: Building2,
   },
@@ -27,7 +27,7 @@ const decorProducts = [
     description: "Full windmill wheel on a custom decorative stand, designed for gardens, courtyards, and estate entrances. A heritage conversation piece that commands attention.",
     image: '/images/windmill-yard-art.png',
     sizes: "6' – 12'",
-    priceRange: '$3,000 – $8,500',
+    priceRange: '$1,300 – $6,000',
     category: 'Exterior',
     icon: TreePine,
   },
@@ -37,22 +37,22 @@ const offerings = [
   {
     title: "Complete Wheel & Vane",
     desc: "Full fan wheel with matching directional vane, professionally restored or built new. Wall-mount or freestanding.",
-    price: "From $3,500",
+    price: "From $2,400",
   },
   {
     title: "Half Fan Display",
     desc: "Semicircular half-wheel art piece, ideal for above mantels, headboards, and accent walls.",
-    price: "From $2,000",
+    price: "From $660",
   },
   {
     title: "Wheel Only",
     desc: "Complete circular fan wheel without vane, finished and ready for interior or exterior mounting.",
-    price: "From $2,500",
+    price: "From $1,300",
   },
   {
     title: "Vane Only",
     desc: "Decorative windmill tail vane, lettered or plain, for standalone wall display or pairing.",
-    price: "From $800",
+    price: "From $1,060",
   },
   {
     title: "Professional Installation",
@@ -331,11 +331,13 @@ export default function WindmillDecor() {
             {/* Price Table */}
             <div className="space-y-0 border border-white/5">
               {[
-                { size: "6' Wheel & Vane", price: "$2,000 – $3,500" },
-                { size: "8' Wheel & Vane", price: "$3,500 – $5,500" },
-                { size: "10' Wheel & Vane", price: "$5,000 – $7,500" },
-                { size: "12' Wheel & Vane", price: "$6,500 – $9,000" },
-                { size: "16' Wheel & Vane", price: "$8,500 – $11,000" },
+                { size: "6' Half Fan", price: "$660 – $900" },
+                { size: "6' Full Wheel & Vane", price: "$2,400 – $3,200" },
+                { size: "8' Full Wheel & Vane", price: "$3,500 – $4,800" },
+                { size: "10' Full Wheel & Vane", price: "$4,800 – $6,500" },
+                { size: "12' Full Wheel & Vane", price: "$6,500 – $8,500" },
+                { size: "14' Full Wheel & Vane", price: "$8,500 – $10,500" },
+                { size: "16' Full Wheel & Vane", price: "$10,500 – $14,500" },
               ].map((row, i) => (
                 <div key={i} className={`flex items-center justify-between py-4 px-6 ${i !== 0 ? 'border-t border-white/5' : ''} hover:bg-white/[0.02] transition-colors`}>
                   <div className="flex items-center space-x-3">

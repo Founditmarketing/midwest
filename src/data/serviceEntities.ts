@@ -403,7 +403,7 @@ export const SERVICE_ENTITIES: ServiceEntity[] = [
     slug: 'windmill-decorative-wall-art-yard-art',
     h1: 'Windmill Decorative Wall Art & Yard Art',
     metaTitle: 'Windmill Decorative Wall Art & Yard Art | Midwest Windmill Company',
-    metaDescription: 'Authentic windmill fan wheels and vanes as premium wall art, yard art, and venue decor. Full fans, half fans, and professional installation from $2,000 to $11,000.',
+    metaDescription: 'Authentic windmill fan wheels and vanes as premium wall art, yard art, and venue decor. Half fans from $660, full wheels from $1,300, complete wheel & vane packages up to $14,500.',
     heroSubtitle: 'Decorative Art',
     heroImage: '/images/windmill-decor-wedding-venue.png',
     schemaServiceType: 'Windmill Decorative Art',
@@ -411,7 +411,7 @@ export const SERVICE_ENTITIES: ServiceEntity[] = [
     overview: [
       'Midwest Windmill Company crafts authentic windmill fan wheels and vanes as premium decorative art for interiors, exteriors, and commercial venues. From high-end wedding venues to luxury home interiors, our windmill décor brings heritage character to any space.',
       'We offer full wheels, half fans, complete wheel-and-vane sets, and standalone vanes in sizes from 6 feet to 16 feet. Every piece is built or restored with authentic American windmill components — not mass-produced decorative imitations.',
-      'Our professional installation team handles both interior wall mounts and exterior displays, including structural assessment, mounting hardware, and white-glove installation. Complete wheel and vane packages range from $2,000 to $11,000 depending on size and finish.'
+      'Our professional installation team handles both interior wall mounts and exterior displays, including structural assessment, mounting hardware, and white-glove installation. Half fan wall art starts at $660, full wheels from $1,300, and complete wheel and vane packages range from $2,400 to $14,500 depending on size and finish.'
     ],
     features: [
       { title: 'Full Fan Wall Mount', desc: 'Complete windmill wheel as a dramatic wall centerpiece.' },
@@ -419,7 +419,7 @@ export const SERVICE_ENTITIES: ServiceEntity[] = [
       { title: 'Yard Art Display', desc: 'Full wheel on decorative stand for gardens and courtyards.' },
       { title: 'Venue Installation', desc: 'Wedding venues, restaurants, and commercial spaces.' },
       { title: '6ft to 16ft', desc: 'Sizes ranging from accent pieces to statement installations.' },
-      { title: '$2K to $11K', desc: 'Complete wheel and vane packages at every price point.' },
+      { title: '$660 – $14,500', desc: 'Half fans from $660, full wheels from $1,300, complete wheel & vane packages scaling by size.' },
     ],
     process: [
       { step: 'Design Consultation', description: 'We discuss your space, style, and size requirements.' },
@@ -429,7 +429,7 @@ export const SERVICE_ENTITIES: ServiceEntity[] = [
     ],
     faqs: [
       { question: 'Can a windmill fan be mounted on a wall?', answer: 'Yes. Midwest Windmill Company professionally mounts windmill fan wheels on interior and exterior walls as dramatic art pieces. We handle the structural assessment and use heavy-duty mounting hardware designed for the weight of authentic windmill components.' },
-      { question: 'How much does decorative windmill wall art cost?', answer: 'Midwest Windmill Company offers complete wheel and vane packages from $2,000 for a 6-foot piece to $11,000 for a 16-foot installation. Half-fan wall art starts at $2,000. Pricing depends on size, finish, and installation complexity.' },
+      { question: 'How much does decorative windmill wall art cost?', answer: 'Midwest Windmill Company offers half fan wall art starting at $660 for a 6-foot piece. Full wheels start at $1,300. Complete wheel and vane packages range from $2,400 for a 6-foot set up to $14,500 for a 16-foot installation. Pricing depends on size, finish, and installation complexity.' },
       { question: 'Do you install windmill decor in wedding venues?', answer: 'Yes. Midwest Windmill Company has installed decorative windmill wheels and vanes in wedding venues, restaurants, and luxury commercial spaces. A full windmill wheel mounted on a stone accent wall makes an unforgettable venue centerpiece.' },
     ],
   },
