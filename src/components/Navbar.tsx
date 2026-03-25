@@ -25,6 +25,7 @@ export default function Navbar() {
     { name: 'Portfolio', path: '/portfolio' },
     { name: 'Services', path: '/services' },
     { name: 'Pricing', path: '/pricing' },
+    { name: 'Décor', path: '/windmill-decor' },
     { name: 'Craftsman', path: '/craftsman' },
   ];
 

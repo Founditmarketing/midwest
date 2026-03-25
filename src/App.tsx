@@ -15,6 +15,7 @@ import Portfolio from './pages/Portfolio';
 import Services from './pages/Services';
 import Craftsman from './pages/Craftsman';
 import Pricing from './pages/Pricing';
+import WindmillDecor from './pages/WindmillDecor';
 import ScrollToTop from './components/ScrollToTop';
 
 export default function App() {
@@ -31,6 +32,7 @@ export default function App() {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/consultation" element={<Consultation />} />
           <Route path="/legacy-parts" element={<LegacyParts />} />
+          <Route path="/windmill-decor" element={<WindmillDecor />} />
         </Routes>
         <Footer />
         <AIReceptionist />
