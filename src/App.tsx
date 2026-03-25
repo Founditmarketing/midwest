@@ -13,6 +13,7 @@ import Consultation from './pages/Consultation';
 import LegacyParts from './pages/LegacyParts';
 import Portfolio from './pages/Portfolio';
 import Services from './pages/Services';
+import ServiceEntityPage from './pages/ServiceEntityPage';
 import Craftsman from './pages/Craftsman';
 import Pricing from './pages/Pricing';
 import WindmillDecor from './pages/WindmillDecor';
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/services/:slug" element={<ServiceEntityPage />} />
           <Route path="/craftsman" element={<Craftsman />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/consultation" element={<Consultation />} />

@@ -1,7 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { SERVICE_ENTITIES } from '../data/serviceEntities';
 
 export default function Footer() {
+  // Pick top 8 services for footer
+  const footerServices = SERVICE_ENTITIES.slice(0, 8);
+
   return (
     <footer className="bg-industrial-charcoal-dark border-t border-white/5 py-16">
       <div className="max-w-7xl mx-auto px-8">
@@ -19,7 +23,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16 font-sans font-light">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 font-sans font-light">
           <div>
             <div className="text-[10px] tracking-widest uppercase text-gray-500 mb-2">Location</div>
             <div className="text-sm text-gray-300">22275 Youngstown Trail<br/>Kirksville, MO 63501</div>
@@ -38,6 +42,28 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Service Entity Links for SEO */}
+        <div className="mb-16">
+          <div className="text-[10px] tracking-widest uppercase text-gray-500 mb-4 font-sans font-light">Our Services</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-2">
+            {footerServices.map((entity) => (
+              <Link
+                key={entity.slug}
+                to={`/services/${entity.slug}`}
+                className="font-sans text-[11px] text-gray-500 hover:text-heritage-gold transition-colors font-light leading-relaxed"
+              >
+                {entity.h1}
+              </Link>
+            ))}
+            <Link
+              to="/services"
+              className="font-sans text-[11px] text-heritage-gold/60 hover:text-heritage-gold transition-colors font-light leading-relaxed"
+            >
+              View All Services →
+            </Link>
+          </div>
+        </div>
+
         <div className="w-full h-[1px] bg-white/5 mb-16"></div>
 
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
@@ -46,7 +72,6 @@ export default function Footer() {
           </p>
           
           <div className="flex space-x-6">
-            {/* Buried links */}
             <Link to="/legacy-parts" className="font-sans text-[9px] tracking-[0.2em] uppercase text-gray-700 hover:text-gray-500 transition-colors font-light">Legacy Parts</Link>
             <Link to="/legacy-parts" className="font-sans text-[9px] tracking-[0.2em] uppercase text-gray-700 hover:text-gray-500 transition-colors font-light">DIY Tech Support</Link>
             <a href="#" className="font-sans text-[9px] tracking-[0.2em] uppercase text-gray-700 hover:text-gray-500 transition-colors font-light">Privacy Policy</a>
