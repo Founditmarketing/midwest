@@ -117,7 +117,7 @@ export const SERVICE_ENTITIES: ServiceEntity[] = [
     process: [
       { step: 'Well Assessment', description: 'We evaluate your well depth, water table level, and desired output.' },
       { step: 'System Sizing', description: 'We match wheel size and tower height to your wind conditions and pumping requirements.' },
-      { step: 'Plumbing & Installation', description: 'Cylinder, pump rod, piping, and tower are installed and connected to your water system.' },
+      { step: 'Plumbing & Coordination', description: 'We coordinate with local licensed well professionals to connect the pump, piping, and tower to your water system.' },
       { step: 'Testing & Calibration', description: 'We verify pump stroke, output volume, and overall system performance.' },
     ],
     faqs: [
@@ -437,33 +437,33 @@ export const SERVICE_ENTITIES: ServiceEntity[] = [
     slug: 'windmill-hand-pump-installation',
     h1: 'Windmill Hand Pump Installation',
     metaTitle: 'Windmill Hand Pump Installation | Midwest Windmill Company',
-    metaDescription: 'Windmill hand pump installation for wells by Midwest Windmill Company. Cylinder pumps, sucker rods, and plumbing connected to your windmill system.',
+    metaDescription: 'Windmill hand pump coordination for wells by Midwest Windmill Company. We partner with licensed experts to connect cylinder pumps, sucker rods, and plumbing to your windmill.',
     heroSubtitle: 'Pump Systems',
     heroImage: '/images/aeration_farm_windmill.png',
     schemaServiceType: 'Windmill Hand Pump Installation',
     category: 'Water & Aeration',
     overview: [
-      'Midwest Windmill Company installs the complete pumping mechanism that connects your windmill to your well — the cylinder pump, sucker rods, drop pipe, and all plumbing necessary to bring water to the surface.',
+      'Midwest Windmill works in collaboration with local licensed well installations companies to follow all local regulations and in conjunction with helping modern electrical pump installation companies to understand old technology.',
       'The hand pump system is the mechanical heart of a water-pumping windmill. A sealed cylinder with a plunger is lowered into the well, connected to the windmill via a long pump rod (sucker rod) that moves up and down with each revolution of the wheel, drawing water to the surface.',
-      'Proper pump installation is critical. The cylinder must be set at the right depth, the sucker rod must be the correct length, and all joints must be watertight. Midwest Windmill Company handles every detail — from the foot valve at the bottom to the pump head at the top.'
+      'Proper pump installation is critical. The cylinder must be set at the right depth, the sucker rod must be the correct length, and all joints must be watertight. We coordinate with local well professionals to ensure every detail is handled correctly — from the foot valve at the bottom to the pump head at the top.'
     ],
     features: [
       { title: 'Cylinder Pump', desc: 'Proper-sized cylinder selected for your well depth and water needs.' },
       { title: 'Sucker Rod', desc: 'Fiberglass or steel pump rods cut to exact length.' },
       { title: 'Drop Pipe', desc: 'Two-inch galvanized piping from surface to cylinder.' },
       { title: 'Foot Valve', desc: 'Prevents water from draining back into the well.' },
-      { title: 'Surface Plumbing', desc: 'Connection to storage tanks, troughs, or household plumbing.' },
+      { title: 'Surface Plumbing', desc: 'Coordinated connection to storage tanks, troughs, or household plumbing.' },
       { title: 'Stroke Adjustment', desc: 'Pump stroke calibrated for maximum efficiency.' },
     ],
     process: [
       { step: 'Well Assessment', description: 'We measure well depth, casing size, and static water level.' },
       { step: 'Component Selection', description: 'Cylinder, rod, and piping sized for your specific well.' },
-      { step: 'Installation', description: 'Foot valve, cylinder, drop pipe, and rod installed and connected.' },
+      { step: 'Installation Coordination', description: 'Foot valve, cylinder, drop pipe, and rod installed by licensed professionals and connected to your windmill.' },
       { step: 'Priming & Testing', description: 'System primed, stroke adjusted, and water output verified.' },
     ],
     faqs: [
       { question: 'What is a windmill hand pump?', answer: 'A windmill hand pump is the cylinder and rod mechanism inside the well that a windmill drives to draw water. The windmill\'s wheel turns, the gearbox converts rotation to vertical motion, and the sucker rod moves a plunger up and down inside a cylinder at the bottom of the well, forcing water upward.' },
-      { question: 'Can a hand pump be added to an existing windmill?', answer: 'Yes. Midwest Windmill Company can install a new pump system on an existing windmill that doesn\'t currently have one, or replace a worn pump system. We handle all plumbing from the bottom of the well to the surface connection.' },
+      { question: 'Can a hand pump be added to an existing windmill?', answer: 'Yes. Midwest Windmill Company can coordinate the installation of a new pump system on an existing windmill that doesn\'t currently have one, or coordinate replacement of a worn pump system. We work with licensed experts to handle all plumbing from the bottom of the well to the surface connection.' },
       { question: 'How do you prime a windmill pump?', answer: 'The drop pipe and cylinder should be filled with water (primed) before the windmill is engaged. Midwest Windmill Company primes all pump installations during the commissioning process to ensure immediate water delivery.' },
     ],
   },

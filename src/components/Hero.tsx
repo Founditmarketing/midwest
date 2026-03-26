@@ -7,7 +7,7 @@ export default function Hero() {
   const yBg = useTransform(scrollYProgress, [0, 1], ['0%', '40%']);
 
   return (
-    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center bg-industrial-charcoal-dark">
+    <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center bg-industrial-charcoal-dark py-32 md:py-48">
       {/* Background Image with Parallax */}
       <div className="absolute inset-0 z-0">
         <motion.div 
@@ -58,7 +58,7 @@ export default function Hero() {
         >
           <Link 
             to="/pricing"
-            className="flex md:inline-flex items-center justify-center px-8 py-4 md:px-12 md:py-5 w-full md:w-auto border border-heritage-gold/50 text-heritage-gold hover:bg-heritage-gold hover:text-industrial-charcoal-dark transition-all duration-500 font-sans text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-[0.3em] uppercase group"
+            className="flex md:inline-flex items-center justify-center px-8 py-4 md:px-12 md:py-5 w-full md:w-auto bg-heritage-gold text-industrial-charcoal-dark hover:bg-transparent hover:text-heritage-gold border border-heritage-gold transition-all duration-500 font-sans text-[9px] md:text-[10px] tracking-[0.2em] md:tracking-[0.3em] uppercase group font-semibold"
           >
             Shop Windmills
             <span className="ml-4 group-hover:translate-x-2 transition-transform duration-300">→</span>
