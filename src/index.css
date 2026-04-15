@@ -56,6 +56,6 @@ body::before {
 }
 
 .logo-spin {
-  animation: windmill-spin 6s linear infinite;
+  animation: windmill-spin 6s linear 1 forwards;
   transform-origin: center center;
 }
