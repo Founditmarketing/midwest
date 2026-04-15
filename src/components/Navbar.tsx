@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import logoWhite from '../assets/Midwest-Windmill-Logo-White.png';
 import { motion, AnimatePresence } from 'motion/react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
@@ -58,7 +59,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-8 flex items-center justify-between">
           <Link to="/" className="relative z-50 group">
             <img
-              src="/Midwest-Windmill-Logo-White.png"
+              src={logoWhite}
               alt="Midwest Windmill Company"
               className="h-12 w-auto object-contain brightness-100 group-hover:brightness-110 transition-all duration-300"
             />
