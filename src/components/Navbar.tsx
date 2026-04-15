@@ -61,7 +61,7 @@ export default function Navbar() {
             <img
               src={logoWhite}
               alt="Midwest Windmill Company"
-              className="h-24 w-auto object-contain brightness-100 group-hover:brightness-110 transition-all duration-300"
+              className="logo-spin h-24 w-auto object-contain"
             />
           </Link>
           

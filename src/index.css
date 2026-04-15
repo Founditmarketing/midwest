@@ -49,3 +49,13 @@ body::before {
     border-image: linear-gradient(135deg, var(--color-heritage-gold-light), var(--color-heritage-gold-dark)) 1;
   }
 }
+
+@keyframes windmill-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.logo-spin {
+  animation: windmill-spin 6s linear infinite;
+  transform-origin: center center;
+}
