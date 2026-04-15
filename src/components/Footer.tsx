@@ -15,7 +15,7 @@ export default function Footer() {
             <img
               src={logoWhite}
               alt="Midwest Windmill Company"
-              className="h-16 w-auto object-contain brightness-100 group-hover:brightness-110 transition-all duration-300"
+              className="h-32 w-auto object-contain brightness-100 group-hover:brightness-110 transition-all duration-300"
             />
           </Link>
           
