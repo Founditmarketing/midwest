@@ -56,9 +56,12 @@ export default function Navbar() {
         }`}
       >
         <div className="max-w-7xl mx-auto px-8 flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-3 group relative z-50">
-            <span className="font-serif text-2xl tracking-widest text-heritage-gold font-light group-hover:text-heritage-gold-light transition-colors">MIDWEST</span>
-            <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-gray-400 mt-1 font-light">Windmill</span>
+          <Link to="/" className="relative z-50 group">
+            <img
+              src="/logo.png"
+              alt="Midwest Windmill Company"
+              className="h-12 w-auto object-contain brightness-100 group-hover:brightness-110 transition-all duration-300"
+            />
           </Link>
           
           <div className="hidden md:flex items-center space-x-12">

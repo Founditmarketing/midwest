@@ -10,9 +10,12 @@ export default function Footer() {
     <footer className="bg-industrial-charcoal-dark border-t border-white/5 py-16">
       <div className="max-w-7xl mx-auto px-8">
         <div className="flex flex-col md:flex-row justify-between items-center mb-16">
-          <Link to="/" className="flex items-center space-x-3 mb-8 md:mb-0 group">
-            <span className="font-serif text-2xl tracking-widest text-heritage-gold font-light group-hover:text-heritage-gold-light transition-colors">MIDWEST</span>
-            <span className="font-sans text-[10px] tracking-[0.4em] uppercase text-gray-400 mt-1 font-light">Windmill</span>
+          <Link to="/" className="mb-8 md:mb-0 group">
+            <img
+              src="/logo.png"
+              alt="Midwest Windmill Company"
+              className="h-16 w-auto object-contain brightness-100 group-hover:brightness-110 transition-all duration-300"
+            />
           </Link>
           
           <div className="flex space-x-8">
