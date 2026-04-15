@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center mb-16">
           <Link to="/" className="mb-8 md:mb-0 group">
             <img
-              src="/logo.png"
+              src="/Midwest-Windmill-Logo-White.png"
               alt="Midwest Windmill Company"
               className="h-16 w-auto object-contain brightness-100 group-hover:brightness-110 transition-all duration-300"
             />

@@ -58,7 +58,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-8 flex items-center justify-between">
           <Link to="/" className="relative z-50 group">
             <img
-              src="/logo.png"
+              src="/Midwest-Windmill-Logo-White.png"
               alt="Midwest Windmill Company"
               className="h-12 w-auto object-contain brightness-100 group-hover:brightness-110 transition-all duration-300"
             />
