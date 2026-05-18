@@ -8,6 +8,7 @@ export default function Consultation() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     property: '',
     projectType: '',
     investmentTier: '',
@@ -129,6 +130,10 @@ export default function Consultation() {
                     <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400">Email Address</label>
                     <input type="email" required value={formData.email} onChange={e => updateForm('email', e.target.value)} className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-heritage-gold transition-colors font-sans text-sm placeholder-gray-700" placeholder="contact@estate.com" />
                   </div>
+                  <div className="space-y-1">
+                    <label className="font-sans text-[10px] tracking-[0.2em] uppercase text-gray-400">Phone Number</label>
+                    <input type="tel" required value={formData.phone} onChange={e => updateForm('phone', e.target.value)} className="w-full bg-transparent border-b border-white/20 px-0 py-3 text-white focus:outline-none focus:border-heritage-gold transition-colors font-sans text-sm placeholder-gray-700" placeholder="(555) 123-4567" />
+                  </div>
                 </div>
               )}
 
@@ -242,7 +247,7 @@ export default function Consultation() {
                      type="button" 
                      onClick={nextStep} 
                      disabled={
-                        (step === 1 && (!formData.name || !formData.email)) ||
+                        (step === 1 && (!formData.name || !formData.email || !formData.phone)) ||
                         (step === 2 && (!formData.property || !formData.projectType || isLegacyParts))
                      }
                      className="flex items-center font-sans text-[10px] tracking-[0.2em] uppercase text-heritage-gold hover:text-white disabled:opacity-30 disabled:hover:text-heritage-gold transition-colors"

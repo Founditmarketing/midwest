@@ -18,7 +18,7 @@ export default async function handler(req: Request) {
       );
     }
 
-    const { name, email, property, projectType, investmentTier, machineryAccess } = await req.json();
+    const { name, email, phone, property, projectType, investmentTier, machineryAccess } = await req.json();
 
     if (!name || !email) {
       return new Response(JSON.stringify({ error: 'Name and email are required.' }), {
@@ -48,6 +48,10 @@ export default async function handler(req: Request) {
               <td style="padding: 12px 0; border-bottom: 1px solid #e8e4dc; font-size: 15px;">
                 <a href="mailto:${email}" style="color: #1a1a1a;">${email}</a>
               </td>
+            </tr>
+            <tr>
+              <td style="padding: 12px 0; border-bottom: 1px solid #e8e4dc; color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Phone</td>
+              <td style="padding: 12px 0; border-bottom: 1px solid #e8e4dc; font-size: 15px;">${phone || 'Not provided'}</td>
             </tr>
             <tr>
               <td style="padding: 12px 0; border-bottom: 1px solid #e8e4dc; color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 1px;">Property</td>
