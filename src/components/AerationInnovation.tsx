@@ -1,0 +1,101 @@
+import React from 'react';
+import { motion } from 'motion/react';
+import { Wind, Droplets, ShieldCheck } from 'lucide-react';
+
+export default function AerationInnovation() {
+  return (
+    <section id="engineering" className="py-20 md:py-32 bg-industrial-charcoal relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+            className="space-y-8 md:space-y-12"
+          >
+            <div>
+              <span className="font-sans text-[9px] md:text-[10px] tracking-[0.3em] md:tracking-[0.4em] uppercase text-gold-gradient block mb-4 md:mb-6 font-semibold">
+                What Our Windmills Do
+              </span>
+              <h2 className="font-serif text-5xl md:text-6xl text-white leading-[1.1] md:leading-tight font-light tracking-tight">
+                Built to Last.<br className="hidden md:block"/>
+                <span className="italic text-gray-400"> Proven for Decades.</span>
+              </h2>
+            </div>
+            
+            <p className="font-sans text-gray-300 leading-[2] md:leading-loose font-light text-xs md:text-base">
+              Our farm windmills are calibrated using time-tested mathematical methods, proven to last for decades with proper maintenance. You can pump water for your home, fill ponds, aerate ponds, water whole orchards, and water livestock. We know the importance of your water supply — that's why we sell only quality windmills built to last.
+            </p>
+
+            <div className="space-y-6 md:space-y-8 pt-8 border-t border-white/10">
+              <div className="flex items-start space-x-4 md:space-x-6 group">
+                <div className="p-3 md:p-4 rounded-full border border-white/10 bg-white/5 group-hover:border-heritage-gold/50 transition-colors shrink-0">
+                  <Wind className="text-heritage-gold" size={20} md:size={24} strokeWidth={1.5} />
+                </div>
+                <div>
+                  <h4 className="font-serif text-xl md:text-2xl text-white mb-2 font-light tracking-wide">Classic American Design</h4>
+                  <p className="font-sans text-xs md:text-sm text-gray-400 font-light leading-relaxed">Every windmill we sell is an original American-made steel design — a timeless addition to any farm, ranch, or homestead.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 md:space-x-6 group">
+                <div className="p-3 md:p-4 rounded-full border border-white/10 bg-white/5 group-hover:border-heritage-gold/50 transition-colors shrink-0">
+                  <Droplets className="text-heritage-gold" size={20} md:size={24} strokeWidth={1.5} />
+                </div>
+                <div>
+                  <h4 className="font-serif text-xl md:text-2xl text-white mb-2 font-light tracking-wide">Water Delivery & Aeration</h4>
+                  <p className="font-sans text-xs md:text-sm text-gray-400 font-light leading-relaxed">Our windmills pump water for homes, fill and aerate ponds to prevent algae, and water entire orchards and livestock operations.</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 md:space-x-6 group">
+                <div className="p-3 md:p-4 rounded-full border border-white/10 bg-white/5 group-hover:border-heritage-gold/50 transition-colors shrink-0">
+                  <ShieldCheck className="text-heritage-gold" size={20} md:size={24} strokeWidth={1.5} />
+                </div>
+                <div>
+                  <h4 className="font-serif text-xl md:text-2xl text-white mb-2 font-light tracking-wide">Generational Lifespan</h4>
+                  <p className="font-sans text-xs md:text-sm text-gray-400 font-light leading-relaxed">Constructed from heavy-gauge galvanized steel and built right in the Midwest. With proper maintenance, our windmills operate flawlessly for decades.</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ clipPath: 'inset(100% 0 0 0)', scale: 1.1 }}
+            whileInView={{ clipPath: 'inset(0% 0 0 0)', scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
+            className="relative h-[600px] md:h-[800px] rounded-sm overflow-hidden mt-8 lg:mt-0"
+          >
+            <div className="absolute inset-0 bg-black/20 z-10 mix-blend-multiply"></div>
+            <img 
+              src="/images/lake-aeration-system.png" 
+              alt="Windmill by a pristine lake" 
+              className="w-full h-full object-cover object-center"
+              referrerPolicy="no-referrer"
+            />
+            
+            {/* Glassmorphism Stats Card */}
+            <div className="absolute bottom-6 left-6 right-6 md:bottom-12 md:left-12 md:right-12 z-20 bg-black/40 backdrop-blur-xl border border-white/10 p-4 md:p-8 rounded-sm">
+              <div className="grid grid-cols-3 gap-4 md:gap-8 text-center">
+                <div>
+                  <div className="font-serif text-2xl md:text-4xl text-heritage-gold mb-1 md:mb-2 font-light">30ft</div>
+                  <div className="font-sans text-[7px] md:text-[9px] tracking-[0.2em] uppercase text-gray-400 font-light">Max Depth</div>
+                </div>
+                <div className="border-x border-white/10">
+                  <div className="font-serif text-2xl md:text-4xl text-heritage-gold mb-1 md:mb-2 font-light">2.5</div>
+                  <div className="font-sans text-[7px] md:text-[9px] tracking-[0.2em] uppercase text-gray-400 font-light">Acres Aerated</div>
+                </div>
+                <div>
+                  <div className="font-serif text-2xl md:text-4xl text-heritage-gold mb-1 md:mb-2 font-light">73"</div>
+                  <div className="font-sans text-[7px] md:text-[9px] tracking-[0.2em] uppercase text-gray-400 font-light">Rotor Size</div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  );
+}
