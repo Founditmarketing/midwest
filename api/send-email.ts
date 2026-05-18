@@ -83,7 +83,7 @@ export default async function handler(req: Request) {
       },
       body: JSON.stringify({
         from: 'Midwest Windmill <hello@midwestwindmillcompany.com>',
-        to: ['jason@founditmarketing.com'],
+        to: ['markhenry@midwestwindmillcompany.com'],
         reply_to: email,
         subject: `New Quote Request from ${name} — ${projectType || 'General Inquiry'}`,
         html: htmlBody,
