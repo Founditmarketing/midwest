@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.midwestwindmillcompany.com/sitemap.xml
