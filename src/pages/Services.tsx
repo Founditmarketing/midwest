@@ -11,7 +11,7 @@ export default function Services() {
       <SEOHead
         title="All Windmill Services | Midwest Windmill Company"
         description="Complete windmill services from Midwest Windmill Company — sales, installation, repair, restoration, pond aeration, water pumping, Aermotor parts, decorative art, and expert consulting. Serving all 50 states."
-        canonical="https://www.midwestwindmillcompany.com/services"
+        canonical="https://midwestwindmillcompany.com/services"
       />
 
       {/* Hero */}

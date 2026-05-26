@@ -13,31 +13,31 @@ Midwest Windmill Company is a premium service provider serving clients nationwid
 
 ## Navigation & Pages
 
-- [Home](https://www.midwestwindmillcompany.com/) - Overview of our custom Aermotor windmills, restoration, and installation services.
-- [Portfolio](https://www.midwestwindmillcompany.com/portfolio) - Showcase of our completed windmill restoration and installation projects.
-- [Services](https://www.midwestwindmillcompany.com/services) - Comprehensive index of our custom windmill services.
-- [Craftsman](https://www.midwestwindmillcompany.com/craftsman) - Information about our history, craftsmanship, and legacy-grade materials.
-- [Pricing](https://www.midwestwindmillcompany.com/pricing) - Price guides for installations, maintenance, restoration, and decor.
-- [Consultation](https://www.midwestwindmillcompany.com/consultation) - Book a site assessment or request a custom windmill quote.
-- [Legacy Parts](https://www.midwestwindmillcompany.com/legacy-parts) - Ordering authentic Aermotor windmill replacement parts and components.
-- [Windmill Decor](https://www.midwestwindmillcompany.com/windmill-decor) - Custom indoor and outdoor windmill decor and yard art.
+- [Home](https://midwestwindmillcompany.com/) - Overview of our custom Aermotor windmills, restoration, and installation services.
+- [Portfolio](https://midwestwindmillcompany.com/portfolio) - Showcase of our completed windmill restoration and installation projects.
+- [Services](https://midwestwindmillcompany.com/services) - Comprehensive index of our custom windmill services.
+- [Craftsman](https://midwestwindmillcompany.com/craftsman) - Information about our history, craftsmanship, and legacy-grade materials.
+- [Pricing](https://midwestwindmillcompany.com/pricing) - Price guides for installations, maintenance, restoration, and decor.
+- [Consultation](https://midwestwindmillcompany.com/consultation) - Book a site assessment or request a custom windmill quote.
+- [Legacy Parts](https://midwestwindmillcompany.com/legacy-parts) - Ordering authentic Aermotor windmill replacement parts and components.
+- [Windmill Decor](https://midwestwindmillcompany.com/windmill-decor) - Custom indoor and outdoor windmill decor and yard art.
 
 ## Services Directory
 
 We specialize in the following windmill engineering and heritage services:
 
-- [New Windmill Sales & Installation](https://www.midwestwindmillcompany.com/services/new-windmill-sales-installation) - Premium Aermotor windmill packages.
-- [Windmill Pond Aeration Systems](https://www.midwestwindmillcompany.com/services/windmill-pond-aeration-systems) - Eco-friendly aeration for ponds and lakes.
-- [Windmill Water Pumping Systems](https://www.midwestwindmillcompany.com/services/windmill-water-pumping-systems) - Off-grid water supply solutions.
-- [Livestock Water Windmill Systems](https://www.midwestwindmillcompany.com/services/livestock-water-windmill-systems) - Heavy-duty watering systems for ranches.
-- [Aermotor Windmill Repair](https://www.midwestwindmillcompany.com/services/aermotor-windmill-repair) - Expert diagnostics and repairs for traditional models.
-- [Windmill Restoration Services](https://www.midwestwindmillcompany.com/services/windmill-restoration-services) - Historical restoration of antique windmills.
-- [Aermotor Windmill Parts & Supplies](https://www.midwestwindmillcompany.com/services/aermotor-windmill-parts-supplies) - High-grade original parts catalog.
-- [Windmill Gearbox Rebuild & Repair](https://www.midwestwindmillcompany.com/services/windmill-gearbox-rebuild-repair) - Professional mechanical gearbox servicing.
-- [Windmill Tower Construction & Replacement](https://www.midwestwindmillcompany.com/services/windmill-tower-construction-replacement) - Wood and steel tower building.
-- [Windmill Relocation Services](https://www.midwestwindmillcompany.com/services/windmill-relocation-services) - Safe dismantling, transport, and reassembly.
-- [Windmill Annual Maintenance & Oiling](https://www.midwestwindmillcompany.com/services/windmill-annual-maintenance-oiling) - Yearly preventative care and lubrication.
-- [Windmill Decorative Wall Art & Yard Art](https://www.midwestwindmillcompany.com/services/windmill-decorative-wall-art-yard-art) - Handcrafted decorative windmills.
-- [Windmill Hand Pump Installation](https://www.midwestwindmillcompany.com/services/windmill-hand-pump-installation) - Hand-operated backup water pumps.
-- [Storm Damage Windmill Repair](https://www.midwestwindmillcompany.com/services/storm-damage-windmill-repair) - Emergency wind, storm, and structural restoration.
-- [Windmill Consulting & Site Assessment](https://www.midwestwindmillcompany.com/services/windmill-consulting-site-assessment) - Feasibility studies, wind mapping, and site evaluation.
+- [New Windmill Sales & Installation](https://midwestwindmillcompany.com/services/new-windmill-sales-installation) - Premium Aermotor windmill packages.
+- [Windmill Pond Aeration Systems](https://midwestwindmillcompany.com/services/windmill-pond-aeration-systems) - Eco-friendly aeration for ponds and lakes.
+- [Windmill Water Pumping Systems](https://midwestwindmillcompany.com/services/windmill-water-pumping-systems) - Off-grid water supply solutions.
+- [Livestock Water Windmill Systems](https://midwestwindmillcompany.com/services/livestock-water-windmill-systems) - Heavy-duty watering systems for ranches.
+- [Aermotor Windmill Repair](https://midwestwindmillcompany.com/services/aermotor-windmill-repair) - Expert diagnostics and repairs for traditional models.
+- [Windmill Restoration Services](https://midwestwindmillcompany.com/services/windmill-restoration-services) - Historical restoration of antique windmills.
+- [Aermotor Windmill Parts & Supplies](https://midwestwindmillcompany.com/services/aermotor-windmill-parts-supplies) - High-grade original parts catalog.
+- [Windmill Gearbox Rebuild & Repair](https://midwestwindmillcompany.com/services/windmill-gearbox-rebuild-repair) - Professional mechanical gearbox servicing.
+- [Windmill Tower Construction & Replacement](https://midwestwindmillcompany.com/services/windmill-tower-construction-replacement) - Wood and steel tower building.
+- [Windmill Relocation Services](https://midwestwindmillcompany.com/services/windmill-relocation-services) - Safe dismantling, transport, and reassembly.
+- [Windmill Annual Maintenance & Oiling](https://midwestwindmillcompany.com/services/windmill-annual-maintenance-oiling) - Yearly preventative care and lubrication.
+- [Windmill Decorative Wall Art & Yard Art](https://midwestwindmillcompany.com/services/windmill-decorative-wall-art-yard-art) - Handcrafted decorative windmills.
+- [Windmill Hand Pump Installation](https://midwestwindmillcompany.com/services/windmill-hand-pump-installation) - Hand-operated backup water pumps.
+- [Storm Damage Windmill Repair](https://midwestwindmillcompany.com/services/storm-damage-windmill-repair) - Emergency wind, storm, and structural restoration.
+- [Windmill Consulting & Site Assessment](https://midwestwindmillcompany.com/services/windmill-consulting-site-assessment) - Feasibility studies, wind mapping, and site evaluation.

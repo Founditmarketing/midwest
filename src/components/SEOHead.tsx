@@ -63,11 +63,11 @@ export function buildServiceSchema(entity: {
     "serviceType": entity.schemaServiceType,
     "name": entity.h1,
     "description": entity.metaDescription,
-    "url": `https://www.midwestwindmillcompany.com/services/${entity.slug}`,
+    "url": `https://midwestwindmillcompany.com/services/${entity.slug}`,
     "provider": {
       "@type": "LocalBusiness",
       "name": "Midwest Windmill Company",
-      "url": "https://www.midwestwindmillcompany.com",
+      "url": "https://midwestwindmillcompany.com",
       "telephone": "+1-660-341-8951",
       "address": {
         "@type": "PostalAddress",

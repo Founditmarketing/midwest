@@ -21,7 +21,7 @@ export default function ServiceEntityPage() {
       <SEOHead
         title={entity.metaTitle}
         description={entity.metaDescription}
-        canonical={`https://www.midwestwindmillcompany.com/services/${entity.slug}`}
+        canonical={`https://midwestwindmillcompany.com/services/${entity.slug}`}
         schema={[serviceSchema, faqSchema]}
       />
 

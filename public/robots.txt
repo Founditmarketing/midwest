@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.midwestwindmillcompany.com/sitemap.xml
+Sitemap: https://midwestwindmillcompany.com/sitemap.xml
